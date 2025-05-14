@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
 import "./footer.css";
 
 const Footer = () => {
@@ -9,7 +8,6 @@ const Footer = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!userEmail) {
@@ -19,24 +17,28 @@ const Footer = () => {
 
     setLoading(true);
 
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_IDS;
-    const userTemplateID = import.meta.env.VITE_EMAILJS_USER_TEMPLATE_IDS;
-    const ngoTemplateID = import.meta.env.VITE_EMAILJS_NGO_TEMPLATE_IDS;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEYS;
-
-    const templateParams = {
-      user_email: userEmail,
-      name: "SOS Palestine Team",
-      email: "contact@sospalestine.fr",
-    };
-
     try {
-      // await emailjs.send(serviceID, userTemplateID, templateParams, publicKey);
-      await emailjs.send(serviceID, ngoTemplateID, templateParams, publicKey);
-      setMessage("Thank you for subscribing!");
-      setUserEmail("");
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/subscribe`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: userEmail }),
+        }
+      );
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setMessage("Thank you for subscribing!");
+        setUserEmail("");
+      } else {
+        setMessage(result.error || "An error occurred. Please try again.");
+      }
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error("Subscription error:", error);
       setMessage("An error occurred. Please try again.");
     } finally {
       setLoading(false);
@@ -45,9 +47,7 @@ const Footer = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      // Do NOT update isOpen here to prevent unintended closure on mobile
+      setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);

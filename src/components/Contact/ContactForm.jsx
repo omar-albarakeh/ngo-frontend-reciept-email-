@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com";
 
-
 function ContactSection() {
   const { t } = useTranslation("contact");
   const [submitted, setSubmitted] = useState(false);
@@ -79,32 +78,33 @@ function ContactSection() {
     },
   ];
 
-  const handleSubmit = (e) => {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const templateParams = {
-      email: formData.email,
-      message: formData.message,
-      time: new Date().toLocaleString(),
-    };
-
-    emailjs
-      .send(
-        "service_ge5l3mx",
-        "template_v519yvp",
-        templateParams,
-        "V0hyNk0EU85FaBFt-"
-      )
-      .then(
-        (response) => {
-          setSubmitted(true);
-          setLoading(false);
+    try {
+      const response = await fetch(`${backendUrl}/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        (error) => {
-          setLoading(false);
-        }
-      );
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error("API error:", data.error);
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleNewMessage = () => {
