@@ -1,0 +1,98 @@
+.bank-info-wrapper {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin: auto;
+}
+
+.bank-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bank-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bank-section {
+  flex: 1 1 300px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bank-section h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.info-inline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.info-inline-item strong {
+  flex-shrink: 0;
+  color: #333;
+}
+
+.info-value {
+  flex-grow: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: #555;
+}
+
+.copy-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.copied-icon {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bank-columns {
+    flex-direction: column;
+  }
+
+  .bank-section {
+    width: 100%;
+  }
+}
+
+.bank-info-wrapper[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}

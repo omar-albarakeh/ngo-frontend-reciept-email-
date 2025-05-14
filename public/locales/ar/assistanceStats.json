@@ -1,0 +1,29 @@
+{
+  "title": "خلال عيد الأضحى، قدمنا المساعدات التالية",
+  "donateMessage": "ساعدنا في زيادة هذه الأرقام هذا العام",
+  "donateButton": "تبرع الآن",
+  "stats": [
+    {
+      "icon": "GiCow",
+      "label": "الأبقار المذبوحة",
+      "count": "٤,٥٠٠",
+      "mealsDistributed": "٤٥,٠٠٠ وجبة"
+    },
+    {
+      "icon": "GiSheep",
+      "label": "الخراف المذبوحة",
+      "count": "٦,٠٠٠",
+      "mealsDistributed": "٣٦,٠٠٠ وجبة"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "الأسر المستفيدة",
+      "count": "٣٥,٠٠٠ أسرة"
+    },
+    {
+      "icon": "GiCardboardBox",
+      "label": "طرود اللحوم الموزعة",
+      "count": "١٥٠,٠٠٠ طرد"
+    }
+  ]
+}

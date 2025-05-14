@@ -1,0 +1,18 @@
+{
+  "timeLeft": "Temps restant pour faire un don pour l'Aïd al-Adha 2025 (1446H)",
+  "goalText": "{{current}} sur {{goal}} dons collectés",
+  "donationMessage": "Choisissez votre type de sacrifice :",
+  "clickToSelect": "Cliquez pour sélectionner ce don",
+  "donationTier": {
+    "sheep": "Mouton",
+    "share": "1/7 d’un veau",
+    "full": "Veau entier"
+  },
+  "milestone": {
+    "100": "🎉 100 dons atteints !",
+    "200": "🎉 200 dons atteints !",
+    "300": "🎉 300 dons atteints !",
+    "400": "🎉 400 dons atteints !",
+    "500": "🎉 Objectif atteint ! Qu'Allah accepte votre sacrifice !"
+  }
+}

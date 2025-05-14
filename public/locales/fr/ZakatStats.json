@@ -1,0 +1,31 @@
+{
+  "title": "Statistiques d'impact de la Zakat al-Maal",
+  "donateMessage": "Votre Zakat atteint les plus vulnérables – soulage les dettes, combat la faim et restaure la dignité.",
+  "donateButton": "Faire un don de Zakat maintenant",
+  "stats": [
+    {
+      "icon": "FaCoins",
+      "label": "Aide financière",
+      "count": "12 000+",
+      "note": "Aide en espèces pour les pauvres et les nécessiteux"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Soutien familial",
+      "count": "20 000+",
+      "note": "Soutien continu aux familles vulnérables grâce à votre Zakat"
+    },
+    {
+      "icon": "FaTshirt",
+      "label": "Vêtements distribués",
+      "count": "18 000+",
+      "note": "Vêtements chauds et dignes fournis aux personnes dans le besoin"
+    },
+    {
+      "icon": "FaHandHoldingUsd",
+      "label": "Cas de libération de dettes",
+      "count": "1 100+",
+      "note": "Annulées grâce à la Zakat pour les personnes éligibles"
+    }
+  ]
+}

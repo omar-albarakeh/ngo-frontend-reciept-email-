@@ -1,0 +1,13 @@
+{
+  "title": "Waisenkinder Patenschaft Auswirkungen Statistik",
+  "donateMessage": "Ihre Patenschaft bietet Waisenkindern ein besseres Leben, Zugang zu Bildung und Pflege. Helfen Sie, ihre glänzende Zukunft zu sichern.",
+  "donateButton": "Waisenkind jetzt unterstützen",
+  "stats": [
+    {
+      "icon": "FaHandsHelping",
+      "label": "Waisenkinder Patenschaften",
+      "count": "10.000+",
+      "note": "Bereitstellung von Patenschaften und Pflege für Waisenkinder in diesem gesegneten Monat"
+    }
+  ]
+}

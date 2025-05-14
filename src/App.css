@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #4caf50;
+  --primary-hover: #276d29;
+  --text-dark: #333;
+  --text-light: #ccc;
+  --background-light: #dbd7d7;
+  --background-color: #f2ede4;
+  --card-bg: #fff;
+  --text-color: #333;
+  --modal-bg: rgba(0, 0, 0, 0.8);
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.597);
+  --radius: 12px;
+}
+
+:root {
+  /* Font Sizes */
+  --font-xs: 0.75rem; /* Small text, use for captions or small labels */
+  --font-sm: 0.875rem; /* Slightly larger text, often for secondary info */
+  --font-md: 1rem; /* Normal text size, used for body text */
+  --font-lg: 1.25rem; /* Larger text, good for subheadings or button text */
+  --font-xl: 1.75rem; /* Subtitles or secondary headers */
+  --font-xxl: 2.5rem; /* Title or main header (H1) */
+
+  /* Font Families */
+  --font-title: "Poppins", "Segoe UI", sans-serif;
+  --font-subtitle: "Roboto", "Segoe UI", sans-serif;
+  --font-text: "Open Sans", "Segoe UI", sans-serif;
+
+  --font-size-title: clamp(var(--font-lg), 2vw + 1rem, var(--font-xl));
+  --font-size-subtitle: clamp(var(--font-md), 1.5vw + 0.75rem, var(--font-lg));
+  --font-size-text: clamp(var(--font-xs), 1vw + 0.5rem, var(--font-sm));
+}
+body {
+  background-color: var(--background-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

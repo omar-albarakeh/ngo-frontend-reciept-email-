@@ -1,0 +1,143 @@
+.impact-card-section {
+  display: flex;
+  justify-content: center;
+  padding: 5vh 1rem;
+  background-color: var(--background-color);
+}
+
+.impact-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+  max-width: 80rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-card-content {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.impact-card-heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.impact-card-text {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+.impact-card-text2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.25rem);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.impact-card-text strong {
+  color: #2e7d32;
+}
+
+.impact-card-button-wrapper {
+  margin-top: 2rem;
+}
+
+.impact-card-btn {
+  all: unset;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block; /* changed from block to inline-block */
+  margin: 0 auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.impact-card-btn:hover {
+  background-color: #2e7d32;
+  transform: translateY(-2px);
+}
+
+.impact-card-images {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fafafa;
+}
+
+.impact-card-img {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .impact-card-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .impact-card-images {
+    padding: 1.5rem;
+  }
+
+  .impact-card-img {
+    max-width: 100%;
+  }
+
+  .impact-card-btn {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .impact-card-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .impact-card-heading {
+    font-size: 1.75rem;
+  }
+
+  .impact-card-text {
+    font-size: 1rem;
+  }
+
+  .impact-card-images {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .impact-card-img {
+    max-width: 100%;
+  }
+
+  .impact-card-btn {
+    width: auto;
+    max-width: 90%;
+  }
+}

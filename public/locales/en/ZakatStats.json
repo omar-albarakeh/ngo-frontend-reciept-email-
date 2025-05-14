@@ -1,0 +1,31 @@
+{
+  "title": "Zakaat al-Maal Impact Statistics",
+  "donateMessage": "Your Zakaat reaches the most vulnerable – relieving debt, fighting hunger, and restoring dignity.",
+  "donateButton": "Donate Zakaat Now",
+  "stats": [
+    {
+      "icon": "FaCoins",
+      "label": "Financial Aid",
+      "count": "12,000+",
+      "note": "Cash assistance for the poor and needy"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Family Support",
+      "count": "20,000+",
+      "note": "Ongoing care and support for vulnerable families through your Zakaat"
+    },
+    {
+      "icon": "FaTshirt",
+      "label": "Clothing Distributed",
+      "count": "18,000+",
+      "note": "Dignified and warm clothing provided to those in need"
+    },
+    {
+      "icon": "FaHandHoldingUsd",
+      "label": "Debt Relief Cases",
+      "count": "1,100+",
+      "note": "Cleared through Zakaat for eligible individuals"
+    }
+  ]
+}

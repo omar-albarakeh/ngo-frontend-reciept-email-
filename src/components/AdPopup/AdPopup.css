@@ -1,0 +1,81 @@
+.ad-popup {
+  position: fixed;
+ inset-inline-end: 10px;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  width: 280px;
+  opacity: 1;
+  top: 30px;
+}
+
+.ad-popup:hover {
+  background-color: #f9f9f9;
+}
+
+.ad-popup-text {
+  flex-grow: 1;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+  margin-left: 1rem;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ad-popup {
+    right: 5px;
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .close-btn {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* Container wrapper */
+.zakat-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Section block */
+.zakat-info-block {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.zakat-info-block:hover {
+  transform: translateY(-4px);
+}
+
+/* Title styling */
+.zakat-info-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* Paragraph styling */
+.zakat-info-text {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.zakat-info-text strong {
+  color: var(--primary-color);
+}
+
+.zakat-info-text em {
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .zakat-info-wrapper {
+    padding: 1.5rem;
+  }
+
+  .zakat-info-title {
+    font-size: 1.5rem;
+  }
+
+  .zakat-info-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .zakat-info-wrapper {
+    padding: 1rem;
+  }
+
+  .zakat-info-block {
+    padding: 1.25rem;
+  }
+
+  .zakat-info-title {
+    font-size: 1.3rem;
+  }
+
+  .zakat-info-text {
+    font-size: 0.95rem;
+  }
+}

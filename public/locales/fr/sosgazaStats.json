@@ -1,0 +1,28 @@
+{
+  "title": "Statistiques de secours SOS Gaza",
+  "donateMessage": "Votre don nous aide à atteindre plus de familles dans le besoin.",
+  "donateButton": "Faire un don",
+  "stats": [
+    {
+      "icon": "GiMeal",
+      "label": "Repas distribués",
+      "count": "260,000+",
+      "note": "Distribués aux familles déplacées"
+    },
+    {
+      "icon": "GiWaterBottle",
+      "label": "Litres d'eau potable",
+      "count": "1,700,000+"
+    },
+    {
+      "icon": "GiFamilyHouse",
+      "label": "Abris temporaires",
+      "count": "2,600+"
+    },
+    {
+      "icon": "FaHandHoldingHeart",
+      "label": "Familles aidées",
+      "count": "240,000+"
+    }
+  ]
+}

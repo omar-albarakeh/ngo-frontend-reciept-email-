@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Questions fréquentes sur le programme de parrainage des orphelins",
+    "list": [
+      {
+        "question": "Qu'est-ce que le programme de parrainage des orphelins ?",
+        "answer": "Le programme de parrainage des orphelins fournit un soutien essentiel tel que la nourriture, l'éducation, les soins de santé et le soutien émotionnel aux enfants orphelins, pour qu'ils grandissent dans un environnement sûr et bienveillant."
+      },
+      {
+        "question": "Comment fonctionne le parrainage d'un orphelin ?",
+        "answer": "En tant que parrain, votre contribution mensuelle aide à couvrir les besoins essentiels d'un orphelin. Vous pouvez recevoir des mises à jour périodiques sur son bien-être et ses progrès, selon les politiques du programme."
+      },
+      {
+        "question": "Combien coûte le parrainage d’un orphelin ?",
+        "answer": "Le parrainage commence généralement à partir d’un montant mensuel fixe, qui varie selon la région et le niveau de prise en charge. Veuillez consulter notre page de don pour les détails."
+      },
+      {
+        "question": "Le parrainage est-il éligible à la Zakat ?",
+        "answer": "Oui, le parrainage est éligible à la Zakat s’il soutient un orphelin pauvre. Nous veillons à respecter les directives islamiques pour sa distribution."
+      },
+      {
+        "question": "Puis-je choisir l'orphelin que je parraine ?",
+        "answer": "Dans la plupart des cas, oui. Certains programmes permettent de choisir selon l’âge, le sexe ou la région. Parfois, le jumelage se fait selon l’urgence."
+      },
+      {
+        "question": "Recevrai-je des nouvelles de l’orphelin ?",
+        "answer": "Oui, les parrains reçoivent généralement des mises à jour annuelles ou semestrielles avec des photos et informations générales."
+      },
+      {
+        "question": "Puis-je envoyer des cadeaux ou des lettres ?",
+        "answer": "Certains programmes le permettent sous conditions, dans le respect de la vie privée et de la dignité de l’enfant. Renseignez-vous auprès du programme."
+      },
+      {
+        "question": "Puis-je faire un don ponctuel au lieu d’un parrainage ?",
+        "answer": "Oui, les dons uniques aident les orphelins non encore parrainés ou soutiennent des projets communautaires."
+      },
+      {
+        "question": "Que se passe-t-il si je ne peux plus parrainer ?",
+        "answer": "Nous comprenons que les situations changent. Si vous ne pouvez plus parrainer, nous chercherons un nouveau parrain pour l’enfant."
+      },
+      {
+        "question": "Comment aider autrement ?",
+        "answer": "Partagez la cause, organisez des collectes de fonds, devenez bénévole ou faites un don général."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "« Ils t’interrogent: Que devons-nous dépenser ? Dis: Ce que vous dépensez de bien doit être pour les parents, les proches, les orphelins... »",
+      "Apportons espoir et dignité aux orphelins grâce à notre soutien constant."
+    ],
+    "source": "Coran, Sourate Al-Baqara (2:215)"
+  }
+}

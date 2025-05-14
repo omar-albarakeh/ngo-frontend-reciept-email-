@@ -1,0 +1,29 @@
+{
+  "donate": {
+    "heading": "Together, We Rise",
+    "text": "When we give as one, we uplift everyone. Your support is a light in someone’s darkest hour. Stand with us, because every hand extended is a soul embraced.",
+    "button": "Join the Cause"
+  },
+  "verse": {
+    "text": "…whoever gives him life, it is as if he gave life to all men.",
+    "source": "— Surah al-Ma'ida (5:32)"
+  },
+  "whoWeAre": {
+    "title": "WHO ARE WE?",
+    "highlight": "We’re here to help Palestinian families survive—and rebuild—with dignity.",
+    "whatWeDo": "What We Do",
+    "bulletPoints": {
+      "sos": "SOS Gaza – Emergency support and humanitarian relief for families affected by the crisis in Gaza.",
+      "zakat": "Zakat Al-Maal – Fulfill your annual obligation by donating your Zakat to those in need, in accordance with Islamic principles.",
+      "eid": "Aid Al-Adha – Share the blessings of Eid by contributing to Qurbani/Udhiya meat distribution for impoverished families.",
+      "orphans": "Orphan Sponsorship – Provide essential support, education, and care to orphans for a brighter and more stable future.",
+      "water": "Water for Gaza – Help deliver clean and safe drinking water to communities suffering from water scarcity in Gaza.",
+      "ramadan": "Ramadan Donations – Maximize your impact during the holy month by donating food, iftar meals, and essentials to those fasting in hardship."
+    },
+    "whyItMatters": "Why It Matters",
+    "whyItMattersText": "Every day, innocent people face unimaginable hardships. With your help, we bring relief and hope where it’s needed most.",
+    "joinMovement": "Join the Movement",
+    "joinMovementText": "Your support means everything. Together, we can build a future where every Palestinian has access to basic human rights—and a chance to thrive.",
+    "donateButton": "MAKE A DONATION"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "إحصائيات إغاثة غزة SOS",
+  "donateMessage": "تساعدنا تبرعاتك في الوصول إلى المزيد من العائلات المحتاجة.",
+  "donateButton": "تبرع الآن",
+  "stats": [
+    {
+      "icon": "GiMeal",
+      "label": "وجبات تم توزيعها",
+      "count": "260,000+",
+      "note": "تم توزيعها على العائلات النازحة"
+    },
+    {
+      "icon": "GiWaterBottle",
+      "label": "لترات من المياه النظيفة",
+      "count": "1,700,000+"
+    },
+    {
+      "icon": "GiFamilyHouse",
+      "label": "ملاجئ مؤقتة",
+      "count": "2,600+"
+    },
+    {
+      "icon": "FaHandHoldingHeart",
+      "label": "عائلات تم مساعدتها",
+      "count": "240,000+"
+    }
+  ]
+}

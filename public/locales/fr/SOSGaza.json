@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Questions fréquentes sur la campagne SOS Gaza",
+    "list": [
+      {
+        "question": "Qu'est-ce que la campagne SOS Gaza ?",
+        "answer": "La campagne SOS Gaza est une initiative d'urgence visant à fournir une aide essentielle comme la nourriture, l'eau, les fournitures médicales et un abri aux familles touchées par la crise en cours à Gaza."
+      },
+      {
+        "question": "Pourquoi une aide urgente est-elle nécessaire à Gaza ?",
+        "answer": "En raison du conflit et du blocus, de nombreuses familles à Gaza manquent de besoins vitaux comme l’eau potable, l’électricité et les soins médicaux. L’aide d’urgence permet de sauver des vies et de soulager les souffrances."
+      },
+      {
+        "question": "Comment sont utilisées les dons pour SOS Gaza ?",
+        "answer": "Les dons servent à financer des colis alimentaires, de l’eau potable, des médicaments, un soutien psychologique et un hébergement temporaire pour les familles déplacées. La transparence est assurée."
+      },
+      {
+        "question": "Puis-je donner ma Zakat pour cette cause ?",
+        "answer": "Oui, vous pouvez faire votre don en tant que Zakat, Sadaqah ou aumône générale, selon votre intention. Nous veillons à ce que la Zakat soit distribuée selon les règles islamiques."
+      },
+      {
+        "question": "Puis-je faire un don matériel au lieu d'argent ?",
+        "answer": "Actuellement, seuls les dons financiers sont acceptés pour garantir une logistique rapide et efficace via nos partenaires sur place."
+      },
+      {
+        "question": "Comment savoir si mon don est bien arrivé à Gaza ?",
+        "answer": "Nos partenaires partagent régulièrement des mises à jour, des photos et des rapports. Vous pouvez vous abonner à ces mises à jour ou consulter la page de la campagne."
+      },
+      {
+        "question": "Y a-t-il des obstacles pour acheminer l’aide à Gaza ?",
+        "answer": "Bien que la situation soit difficile, nous travaillons avec des partenaires expérimentés qui peuvent livrer directement l’aide malgré les défis."
+      },
+      {
+        "question": "Puis-je faire un don de manière anonyme ?",
+        "answer": "Oui, les dons anonymes sont possibles. Vous ne serez contacté que si vous vous abonnez aux mises à jour."
+      },
+      {
+        "question": "Quel est le besoin le plus urgent à Gaza ?",
+        "answer": "Les médicaments, l’eau potable et la nourriture sont parmi les besoins les plus urgents. Chaque don compte."
+      },
+      {
+        "question": "Comment puis-je aider en dehors des dons ?",
+        "answer": "Vous pouvez sensibiliser en partageant la campagne, organiser des collectes locales, prier pour les victimes et informer les autres sur la crise humanitaire à Gaza."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Et quiconque sauve une vie, c’est comme s’il avait sauvé toute l’humanité.\"",
+      "Soyons parmi ceux qui apportent secours et espoir à Gaza dans cette heure critique."
+    ],
+    "source": "Coran, Sourate Al-Ma'idah (5:32)"
+  }
+}

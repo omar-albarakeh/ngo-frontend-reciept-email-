@@ -1,0 +1,30 @@
+{
+  "youtubeUpdates": "Découvrez comment votre soutien change des vies — regardez nos histoires touchantes sur YouTube !",
+  "visit": "Visitez notre chaîne YouTube",
+  "videos": [
+    {
+      "title": "Appel urgent – Udhiyah de l’Aïd Al-Adha pour Gaza",
+      "description": "En ce jour de l’Aïd, aidez-nous à offrir des sacrifices d’Udhiyah urgents aux familles de Gaza dans le besoin."
+    },
+    {
+      "title": "Ramadan : une saison de don",
+      "description": "Le Ramadan est synonyme de compassion et de générosité. Découvrez comment le don peut apporter de l'espoir pendant ce mois sacré."
+    },
+    {
+      "title": "Donner en retour pendant le Ramadan",
+      "description": "Pendant le Ramadan, chaque acte de bonté compte. Regardez comment la générosité transforme des vies."
+    },
+    {
+      "title": "Nourrir les familles pendant le Ramadan",
+      "description": "Pendant le Ramadan, personne ne devrait avoir faim. Voyez comment nous aidons les familles avec de la nourriture et des fournitures."
+    },
+    {
+      "title": "Urgence à Gaza : un hiver meurtrier",
+      "description": "Gaza fait face à un hiver rigoureux avec des ressources limitées. Votre aide peut apporter une aide urgente aux plus démunis."
+    },
+    {
+      "title": "Distribuer de la nourriture, apporter de l'espoir",
+      "description": "La distribution alimentaire apporte nourriture et espoir aux familles dans le besoin. Regardez comment nous faisons la différence."
+    }
+  ]
+}

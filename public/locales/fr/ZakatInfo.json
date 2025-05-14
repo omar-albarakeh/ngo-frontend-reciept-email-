@@ -1,0 +1,19 @@
+{
+  "zakat": {
+    "what_title": "Qu'est-ce que la Zakat al-Maal ?",
+    "what_text": {
+      "part1": "La Zakat al-Maal est plus qu’un devoir — c’est un puissant acte de don. Cette aumône annuelle, fixée à",
+      "part2": "de la richesse accumulée, est un outil divin de l’islam pour",
+      "part3": "lutter contre la pauvreté",
+      "part4": "et",
+      "part5": "favoriser l’égalité"
+    },
+    "right_title": "Un droit, pas une faveur",
+    "right_text": {
+      "part1": "En islam, la zakat n’est pas seulement une aumône — c’est le",
+      "part2": "droit des pauvres",
+      "part3": "Votre contribution soutient",
+      "part4": "les femmes isolées, les orphelins et les familles en détresse"
+    }
+  }
+}

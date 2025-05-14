@@ -1,0 +1,40 @@
+{
+  "features": {
+    "title": "Unsere Neuesten Aktivitäten",
+    "initiatives": [
+      {
+        "id": "gazaWaterWell",
+        "title": "Brunnenbau in Gaza: Stillen Sie ihren Durst",
+        "description": "Zugang zu sauberem Wasser ist ein Grundrecht, doch viele in Gaza leiden unter verschmutztem und knappen Wasser. Helfen Sie uns, nachhaltige Brunnen zu bauen, die sichere Trinkwasserversorgung für Familien, Schulen und Krankenhäuser ermöglichen. Ihre Unterstützung rettet Leben.",
+        "highlights": [
+          "Tägliche Versorgung mit sauberem Wasser",
+          "Reduktion wasserbedingter Krankheiten",
+          "Stärkung der Gemeinschaften langfristig"
+        ],
+        "cta": "Brunnen finanzieren"
+      },
+      {
+        "id": "ramadan2025",
+        "title": "Ramadan 2025: Monat der Barmherzigkeit und des Gebens",
+        "description": "Nehmen Sie an unserer Ramadan-Kampagne 2025 teil, um Hungernde zu ernähren, Bedürftige zu kleiden und Familien in Not zu unterstützen. Ihre Großzügigkeit bringt Wärme, Nahrung und Freude zu Waisen, Flüchtlingen und Armen weltweit.",
+        "highlights": [
+          "Lieferung von Iftar- und Suhoor-Mahlzeiten",
+          "Eid-Kleidung für Kinder",
+          "Monatliche Lebensmittelpakete für Familien"
+        ],
+        "cta": "Zum Ramadan beitragen"
+      },
+      {
+        "id": "adha2024",
+        "title": "Segnungen von Adha 2024: Teile das Opfer, Verbreite Freude",
+        "description": "Ihr Qurbani ernährt Bedürftige! Unterstützen Sie uns zu Adha dabei, frisches, nahrhaftes Fleisch an arme Familien, Waisen und Flüchtlinge zu verteilen. Ihre Spende ermöglicht es diesen Gemeinschaften, Eid würdevoll zu feiern.",
+        "highlights": [
+          "Versorgung einer Familie zu Eid",
+          "Unterstützung von Witwen und Waisen",
+          "Fleischverteilung in Konfliktgebieten"
+        ],
+        "cta": "Jetzt spenden"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "During Eid al-Adha, we provided the following assistance",
+  "donateMessage": "Help us increase these numbers this year",
+  "donateButton": "Donate Now",
+  "stats": [
+    {
+      "icon": "GiCow",
+      "label": "Cows Sacrificed",
+      "count": "4,500",
+      "mealsDistributed": "45,000 meals"
+    },
+    {
+      "icon": "GiSheep",
+      "label": "Sheep Sacrificed",
+      "count": "6,000",
+      "mealsDistributed": "36,000 meals"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Families Assisted",
+      "count": "35,000 families"
+    },
+    {
+      "icon": "GiCardboardBox",
+      "label": "Meat Packages Delivered",
+      "count": "150,000 packages"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "sliderB": {
+    "galleryInlineText": "Explore the full gallery 👉",
+    "gallery": "Gallery",
+    "description": "Step into a world of compassion and impact through our featured donation campaigns. Whether you're supporting emergency relief, nourishing families during Ramadan, or providing clean water to Gaza, every action you take brings hope to those who need it most.",
+    "title": " Click on the card to view all related images ",
+    "subtitle": "Click on the card to view all related images",
+    "water_for_gaza_title": " Water for Gaza",
+    "water_for_gaza_description": "Help provide clean drinking water to families in Gaza. ",
+    "water_for_gaza_cta": " Donate Water",
+
+    "ramadan_2025_title": " Ramadan 2025 Appeal",
+    "ramadan_2025_description": "Support fasting families with food and essentials this Ramadan. ",
+    "ramadan_2025_cta": " Donate for Ramadan",
+
+    "sos_gaza_title": " SOS Gaza",
+    "sos_gaza_description": "Deliver urgent supplies and medical aid to Gaza. ",
+    "sos_gaza_cta": " Help Gaza",
+
+    "orphan_sponsorship_title": " Sponsor an Orphan",
+    "orphan_sponsorship_description": "Change a child's life by becoming a sponsor. ",
+    "orphan_sponsorship_cta": " Sponsor Now",
+
+    "zakat_maal_title": " Zakat al-Maal",
+    "zakat_maal_description": "Fulfill your obligation and purify your wealth. ",
+    "zakat_maal_cta": " Give Zakat",
+
+    "aid_al_adha_title": " Eid al-Adha Qurbani",
+    "aid_al_adha_description": "Give your Qurbani and feed families in need. ",
+    "aid_al_adha_cta": " Give Qurbani",
+
+    "ramadan_2025_title_2": " Ramadan Food Parcels",
+    "ramadan_2025_description_2": "Deliver food parcels to the most vulnerable this Ramadan. ",
+    "ramadan_2025_cta_2": " Provide a Parcel",
+
+    "water_for_gaza_title_2": " Gaza Water Tank Project",
+    "water_for_gaza_description_2": "Help us install water tanks in areas hit hardest. ",
+    "water_for_gaza_cta_2": " Build a Tank",
+
+    "orphan_sponsorship_title_2": " Orphan Monthly Support",
+    "orphan_sponsorship_description_2": "Provide consistent monthly aid to orphans in need. ",
+    "orphan_sponsorship_cta_2": " Monthly Sponsorship",
+
+    "ramadan_donations_title": " Ramadan Donations",
+    "ramadan_donations_description": "Make your Ramadan donations count where it matters most. ",
+    "ramadan_donations_cta": " Donate Generously",
+
+    "water_for_gaza_title_3": " Clean Water Initiative",
+    "water_for_gaza_description_3": "Join the mission to provide long-term water solutions. ",
+    "water_for_gaza_cta_3": " Join the Initiative",
+
+    "sos_gaza_title_2": " Emergency Medical Aid",
+    "sos_gaza_description_2": "Fund critical treatments for Gaza’s injured civilians. ",
+    "sos_gaza_cta_2": " Provide Medical Aid",
+
+    "aid_al_adha_title_2": " Adha Animal Sacrifice",
+    "aid_al_adha_description_2": "Offer your sacrifice to feed families this Eid. ",
+    "aid_al_adha_cta_2": " Make a Sacrifice"
+  }
+}

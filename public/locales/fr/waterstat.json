@@ -1,0 +1,25 @@
+{
+  "title": "Impact de l'Aide en Eau en Palestine",
+  "donateMessage": "Votre contribution permet de fournir de l'eau potable aux familles palestiniennes — améliorant leur santé, dignité et quotidien.",
+  "donateButton": "Fournir de l'eau potable",
+  "stats": [
+    {
+      "icon": "FaFaucet",
+      "label": "Litres distribués",
+      "count": "1 200 000+",
+      "note": "Eau propre livrée aux communautés dans le besoin"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Familles aidées",
+      "count": "8 500+",
+      "note": "Foyers bénéficiant d'un accès fiable à l'eau"
+    },
+    {
+      "icon": "FaTools",
+      "label": "Puits construits",
+      "count": "75+",
+      "note": "Puits profonds construits dans les régions défavorisées"
+    }
+  ]
+}

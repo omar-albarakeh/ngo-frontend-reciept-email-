@@ -1,0 +1,40 @@
+{
+  "slider": [
+    {
+      "name": "SOS Gaza",
+      "description": "Soyez le soutien vital des familles de Gaza en fournissant nourriture, abri et soins médicaux",
+      "buttonText": "Faire un don",
+      "link": "/donation"
+    },
+    {
+      "name": "Zakat",
+      "description": "Votre Zakat ouvre l'espoir et redonne la dignité aux nécessiteux",
+      "buttonText": "Calculez votre Zakat",
+      "link": "/zakat-al-maal#zakat-calculator"
+    },
+    {
+      "name": "Ramadan 2025",
+      "description": "Remplissez leurs tables de bénédictions grâce à votre générosité ce Ramadan",
+      "buttonText": "Faire un don",
+      "link": "/donation"
+    },
+    {
+      "name": "Aïd al-Adha",
+      "description": "Partagez votre sacrifice et apportez de la joie aux cœurs des nécessiteux",
+      "buttonText": "Faire un don",
+      "link": "/donation"
+    },
+    {
+      "name": "Parrainage d’orphelins",
+      "description": "Soyez l'espoir et le soutien d’un orphelin en attente",
+      "buttonText": "Faire un don",
+      "link": "/donation"
+    },
+    {
+      "name": "Eau pour Gaza",
+      "description": "Fournissez des solutions d'eau potable et vitales aux familles de Gaza",
+      "buttonText": "Faire un don",
+      "link": "/donation"
+    }
+  ]
+}

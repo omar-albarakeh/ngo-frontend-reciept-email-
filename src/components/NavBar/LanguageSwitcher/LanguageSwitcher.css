@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #4caf50;
+  --primary-hover: #276d29;
+  --text-dark: #333;
+  --text-light: #ccc;
+  --background-light: #f9f9f9;
+  --background-color: #f2ede4;
+
+  /* Font Sizes */
+  --font-xs: 0.75rem; /* Small text, use for captions or small labels */
+  --font-sm: 0.875rem; /* Slightly larger text, often for secondary info */
+  --font-md: 1rem; /* Normal text size, used for body text */
+  --font-lg: 1.25rem; /* Larger text, good for subheadings or button text */
+  --font-xl: 1.75rem; /* Subtitles or secondary headers */
+  --font-xxl: 2.5rem; /* Title or main header (H1) */
+
+  /* Font Families */
+  --font-title: "Poppins", "Segoe UI", sans-serif;
+  --font-subtitle: "Roboto", "Segoe UI", sans-serif;
+  --font-text: "Open Sans", "Segoe UI", sans-serif;
+}
+
+/* Language Switcher Container */
+.language-switcher {
+  max-width: 100%;  /* Using % to make it responsive */
+  font-size: var(--font-sm); /* Use custom font size */
+  z-index: 1050;
+}
+
+/* Main select box styling */
+.lang-select__control {
+  background-color: var(--background-color) !important;
+  color: var(--text-dark) !important;
+  border: 0.0625rem solid var(--text-light) !important; /* 1px converted to rem */
+  border-radius: 0.625rem !important;  /* 10px to rem */
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05) !important;  /* 2px to rem */
+  cursor: pointer !important;
+}
+
+/* Focused state */
+.lang-select__control--is-focused {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.1875rem rgba(76, 175, 80, 0.25) !important; /* 3px to rem */
+}
+
+/* Hover state */
+.lang-select__control:hover {
+  border-color: var(--primary-color) !important;
+}
+
+/* Container inside control */
+.lang-select__value-container {
+  padding: 0.375rem 0.75rem !important; /* 6px 12px to rem */
+}
+
+/* Dropdown indicator area */
+.lang-select__indicators {
+  padding: 0.375rem !important; /* 6px to rem */
+}
+
+/* Dropdown menu */
+.lang-select__menu {
+  background-color: var(--background-color) !important;
+  border-radius: 0.625rem !important; /* 10px to rem */
+  overflow: hidden !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important; /* 8px 16px to rem */
+  z-index: 1060 !important;
+}
+
+/* Each option in the dropdown */
+.lang-select__option {
+  background-color: var(--background-color) !important;
+  color: var(--text-dark) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.625rem !important; /* 10px to rem */
+  padding: 0.625rem 0.875rem !important; /* 10px 14px to rem */
+  transition: background-color 0.2s ease !important;
+}
+
+/* Focused (hovered) option */
+.lang-select__option--is-focused {
+  background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+/* Selected option */
+.lang-select__option--is-selected {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Selected value (when dropdown is closed) */
+.lang-select__single-value {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.625rem !important; /* 10px to rem */
+  color: var(--text-dark) !important;
+}
+
+/* Language option layout */
+.language-option {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.625rem !important; /* 10px to rem */
+}
+
+/* Flag icons */
+.language-option img {
+  width: 1.25rem !important; /* 20px to rem */
+  height: 1.25rem !important; /* 20px to rem */
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 760px) {
+  .language-switcher {
+    max-width: 100%;
+    font-size: var(--font-xs); /* Smaller font size on mobile */
+  }
+
+  .lang-select__control {
+    min-height: 2rem !important; /* 32px to rem */
+  }
+
+  .lang-select__value-container {
+    padding: 0.25rem 0.5rem !important; /* 4px 8px to rem */
+  }
+
+  .lang-select__indicators {
+    padding: 0.25rem !important; /* 4px to rem */
+  }
+
+  .lang-select__option {
+    padding: 0.5rem 0.625rem !important; /* 8px 10px to rem */
+    font-size: var(--font-xs) !important;
+  }
+
+  .lang-select__single-value {
+    font-size: var(--font-xs) !important;
+  }
+
+  .language-option img {
+    width: 1rem !important; /* 16px to rem */
+    height: 1rem !important; /* 16px to rem */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens */
+  .language-switcher {
+    font-size: var(--font-xs); /* Smaller font size for very small screens */
+  }
+
+  .lang-select__control {
+    min-height: 1.875rem !important; /* 30px to rem */
+  }
+
+  .lang-select__value-container {
+    padding: 0.125rem 0.375rem !important; /* 2px 6px to rem */
+  }
+
+  .lang-select__indicators {
+    padding: 0.125rem !important; /* 2px to rem */
+  }
+
+  .lang-select__option {
+    padding: 0.375rem 0.5rem !important; /* 6px 8px to rem */
+    font-size: var(--font-xs) !important;
+  }
+
+  .lang-select__single-value {
+    font-size: var(--font-xs) !important;
+  }
+
+  .language-option img {
+    width: 0.875rem !important; /* 14px to rem */
+    height: 0.875rem !important; /* 14px to rem */
+  }
+}

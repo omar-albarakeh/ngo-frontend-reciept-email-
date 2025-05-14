@@ -1,0 +1,16 @@
+{
+  "backToDonation": "Retour au formulaire de don",
+  "completeYourDonation": "Complétez votre don",
+  "retrying": "Réessayer...",
+  "tryAgain": "Réessayer",
+  "yourDonation": "Votre don:",
+  "total": "Total",
+  "includesProcessingFees": "Frais de traitement de €{{feeAmount}} inclus",
+  "settingUpPayment": "Mise en place du paiement sécurisé...",
+  "thankYou": "Merci, {{name}}!",
+  "amount": "Montant",
+  "netReceived": "Montant net reçu",
+  "transactionId": "ID de la transaction",
+  "receiptSentTo": "Un reçu a été envoyé à {{email}}",
+  "returningIn": "Retour au formulaire de don dans {{countdown}} secondes..."
+}

@@ -1,0 +1,12 @@
+{
+  "title": "معلومات الحساب المصرفي",
+  "france": "فرنسا",
+  "switzerland": "سويسرا",
+  "IBAN_FR": "رقم الحساب الدولي (IBAN)",
+  "BIC_FR": "رمز البنك (BIC)",
+  "IBAN_CH": "رقم الحساب الدولي (IBAN)",
+  "copyIBAN_FR": "نسخ IBAN",
+  "copyBIC_FR": "نسخ BIC",
+  "copyIBAN_CH": "نسخ IBAN",
+  "button": "تبرع الآن"
+}

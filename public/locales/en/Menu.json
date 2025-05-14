@@ -1,0 +1,37 @@
+{
+  "menu": {
+    "heading": "Our Services",
+    "learnMore": "Learn More",
+    "donateNow": "Donate Now",
+    "aidAlAdha": {
+      "title": "Eid Al-Adha",
+      "subtitle": "Celebrate Eid by sharing joy with families in Gaza. Choose to donate: a sheep for €250, a whole calf for €1850, or a seventh of a calf for €260. Your gift helps provide sacrificial animals, bringing warmth and happiness to those in need.",
+      "learnMoreLink": "/aid-al-adha"
+    },
+    "sosGaza": {
+      "title": "Gaza Emergency",
+      "subtitle": "The people of Gaza are living under constant bombardment and humanitarian suffering. Your urgent support provides food, medical aid, and essential supplies to affected families.",
+      "learnMoreLink": "/sos-gaza"
+    },
+    "zakatAlMaal": {
+      "title": "Zakat Al-Maal",
+      "subtitle": "Fulfill your religious duty and help improve lives. Zakat Al-Maal, one of Islam’s five pillars, requires paying 2.5% of savings above the nisab threshold. Your zakat supports critical relief efforts and sustainable development projects.",
+      "learnMoreLink": "/zakat-al-maal"
+    },
+    "orphanSponsorship": {
+      "title": "Orphan Sponsorship",
+      "subtitle": "Make a lasting impact on a child's life. Sponsor an orphan to provide them with food, education, healthcare, and a sense of belonging.",
+      "learnMoreLink": "/orphan-sponsorship"
+    },
+    "waterForGaza": {
+      "title": "Clean Water for Gaza",
+      "subtitle": "In Gaza, over 90% of tap water is undrinkable due to high salinity and pollution. Groundwater contamination exceeds 96%. Help us provide clean and safe water — a lifeline for many families.",
+      "learnMoreLink": "/water-for-gaza"
+    },
+    "ramadan2025": {
+      "title": "Ramadan 2025",
+      "subtitle": "Make this Ramadan a season of giving. Help provide iftar meals and food baskets to families in need, and bring joy to their hearts during the holy month. Your donation makes a real difference.",
+      "learnMoreLink": "/ramadan-2025"
+    }
+  }
+}

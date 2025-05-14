@@ -1,0 +1,28 @@
+{
+  "title": "SOS Gaza Relief Stats",
+  "donateMessage": "Your donation helps us reach more families in urgent need.",
+  "donateButton": "Donate Now",
+  "stats": [
+    {
+      "icon": "GiMeal",
+      "label": "Meals Delivered",
+      "count": "260,000+",
+      "note": "Distributed to displaced families"
+    },
+    {
+      "icon": "GiWaterBottle",
+      "label": "Liters of Clean Water",
+      "count": "1,700,000+"
+    },
+    {
+      "icon": "GiFamilyHouse",
+      "label": "Temporary Shelters",
+      "count": "2,600+"
+    },
+    {
+      "icon": "FaHandHoldingHeart",
+      "label": "Families Assisted",
+      "count": "240,000+"
+    }
+  ]
+}

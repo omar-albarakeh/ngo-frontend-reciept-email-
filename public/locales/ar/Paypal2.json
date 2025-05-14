@@ -1,0 +1,16 @@
+{
+  "backToDonation": "الرجوع إلى نموذج التبرع",
+  "completeYourDonation": "أكمل تبرعك",
+  "retrying": "إعادة المحاولة...",
+  "tryAgain": "حاول مرة أخرى",
+  "yourDonation": "تبرعك:",
+  "total": "المجموع",
+  "includesProcessingFees": "يشمل رسوم المعالجة €{{feeAmount}}",
+  "settingUpPayment": "إعداد الدفع الآمن...",
+  "thankYou": "شكرًا لك، {{name}}!",
+  "amount": "المبلغ",
+  "netReceived": "الصافي المستلم",
+  "transactionId": "معرف المعاملة",
+  "receiptSentTo": "تم إرسال إيصال إلى {{email}}",
+  "returningIn": "العودة إلى نموذج التبرع في {{countdown}} ثانية..."
+}

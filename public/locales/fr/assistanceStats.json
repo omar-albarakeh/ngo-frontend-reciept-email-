@@ -1,0 +1,29 @@
+{
+  "title": "Pendant l'Aïd al-Adha, nous avons fourni l'assistance suivante",
+  "donateMessage": "Aidez-nous à augmenter ces chiffres cette année",
+  "donateButton": "Faire un don",
+  "stats": [
+    {
+      "icon": "GiCow",
+      "label": "Vaches sacrifiées",
+      "count": "4 500",
+      "mealsDistributed": "45 000 repas"
+    },
+    {
+      "icon": "GiSheep",
+      "label": "Moutons sacrifiés",
+      "count": "6 000",
+      "mealsDistributed": "36 000 repas"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Familles aidées",
+      "count": "35 000 familles"
+    },
+    {
+      "icon": "GiCardboardBox",
+      "label": "Colis de viande livrés",
+      "count": "150 000 colis"
+    }
+  ]
+}

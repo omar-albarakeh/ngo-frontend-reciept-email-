@@ -1,0 +1,153 @@
+.zakat-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 86vw;
+  margin: 2.5rem auto;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: var(--background-light);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.zakat-triangle {
+  flex: 1 1 40%;
+  position: relative;
+  width: 100%;
+  max-width: 37.5rem;
+  height: 31.25rem;
+  clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.zakat-triangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.zakat-triangle:hover img {
+  transform: scale(1.05);
+}
+
+.zakat-content {
+  flex: 1 1 50%;
+  padding: 1.25rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+.zakat-content h2 {
+  color: var(--text-dark);
+  font-size: var(--font-size-title);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-family: var(--font-title);
+}
+
+.zakat-content p {
+  font-size: var(--font-size-text);
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1.125rem;
+  font-family: var(--font-text);
+}
+
+.aid-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.ZakatButton {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.ZakatButton:hover {
+  background-color: #0f703a;
+  transform: scale(1.03);
+}
+
+.ZakatButton:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 64rem) {
+  .zakat-section {
+    padding: 2.5rem 1.875rem;
+    gap: 1.875rem;
+  }
+
+  .zakat-triangle {
+    max-width: 28.125rem;
+    height: 25rem;
+  }
+
+  .zakat-content h2 {
+    font-size: var(--font-xl);
+  }
+}
+
+@media (max-width: 48rem) {
+  .zakat-section {
+    flex-direction: column;
+    padding: 1.875rem 1.25rem;
+  }
+
+  .zakat-triangle {
+    max-width: 100%;
+    height: 18.75rem;
+  }
+
+  .zakat-content {
+    padding: 0.9375rem 0;
+    text-align: center;
+  }
+
+  .zakat-content h2 {
+    font-size: var(--font-lg);
+  }
+
+  .zakat-content p {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 30rem) {
+  .zakat-triangle {
+    height: 15.625rem;
+  }
+
+  .zakat-content h2 {
+    font-size: var(--font-md);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.875rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

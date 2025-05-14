@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Häufig gestellte Fragen zur SOS Gaza Kampagne",
+    "list": [
+      {
+        "question": "Was ist die SOS Gaza Kampagne?",
+        "answer": "Die SOS Gaza Kampagne ist eine Notfallhilfe-Initiative, die darauf abzielt, betroffenen Familien in Gaza mit Nahrungsmitteln, sauberem Wasser, Medikamenten und Unterkünften zu helfen."
+      },
+      {
+        "question": "Warum wird dringend Hilfe in Gaza benötigt?",
+        "answer": "Aufgrund des andauernden Konflikts und der Blockade herrscht in Gaza ein Mangel an lebenswichtigen Gütern wie sauberem Wasser, Strom und medizinischer Versorgung. Dringende Hilfe rettet Leben und lindert das Leid."
+      },
+      {
+        "question": "Wie werden Spenden in der SOS Gaza Kampagne verwendet?",
+        "answer": "Spenden werden für Lebensmittelpakete, Trinkwasser, medizinische Versorgung, psychologische Unterstützung und Notunterkünfte verwendet. Transparenz und Verantwortung sind gewährleistet."
+      },
+      {
+        "question": "Ist meine Spende für Zakat geeignet?",
+        "answer": "Ja, Spenden an die SOS Gaza Kampagne können als Zakat, Sadaqah oder allgemeine Wohltätigkeit gegeben werden. Wir stellen sicher, dass Zakat nach islamischen Regeln verteilt wird."
+      },
+      {
+        "question": "Kann ich statt Geld auch Sachspenden machen?",
+        "answer": "Momentan nehmen wir nur Geldspenden an, um eine schnelle und effiziente Verteilung durch unsere Partner vor Ort zu gewährleisten."
+      },
+      {
+        "question": "Wie kann ich sicher sein, dass meine Spende Gaza erreicht?",
+        "answer": "Unsere Partner liefern regelmäßig Berichte, Fotos und Updates. Sie können sich für diese Updates anmelden oder die Kampagnenseite besuchen."
+      },
+      {
+        "question": "Gibt es Risiken bei der Zustellung von Hilfe nach Gaza?",
+        "answer": "Trotz der Herausforderungen arbeiten wir mit erfahrenen humanitären Partnern zusammen, die in der Lage sind, Hilfe effizient zu liefern."
+      },
+      {
+        "question": "Kann ich anonym spenden?",
+        "answer": "Ja, anonyme Spenden sind möglich. Sie werden nur kontaktiert, wenn Sie sich für Updates anmelden."
+      },
+      {
+        "question": "Was ist derzeit der dringendste Bedarf in Gaza?",
+        "answer": "Medikamente, sauberes Wasser und Nahrung gehören zu den dringendsten Bedürfnissen. Jede Spende zählt."
+      },
+      {
+        "question": "Wie kann ich helfen, außer zu spenden?",
+        "answer": "Sie können helfen, indem Sie die Kampagne teilen, lokale Spendenaktionen organisieren, für die Betroffenen beten und andere über die humanitäre Krise in Gaza informieren."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Und wer einem Menschen das Leben rettet, so ist es, als habe er der ganzen Menschheit das Leben gerettet.\"",
+      "Lassen Sie uns zu denen gehören, die Hoffnung und Hilfe nach Gaza bringen."
+    ],
+    "source": "Koran, Sure Al-Ma'idah (5:32)"
+  }
+}

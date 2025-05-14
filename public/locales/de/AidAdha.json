@@ -1,0 +1,58 @@
+{
+  "faqs": {
+    "title": "Häufig gestellte Fragen zu Eid al-Adha",
+    "list": [
+      {
+        "question": "Was ist Eid al-Adha?",
+        "answer": "Eid al-Adha, auch bekannt als das Opferfest, ist ein bedeutendes islamisches Fest, das an die Bereitschaft des Propheten Ibrahim (Abraham) erinnert, seinen Sohn Isma'il auf Gottes Befehl hin zu opfern. Es markiert das Ende der Hadsch-Pilgerfahrt und ist eine Zeit der Opfergabe, Wohltätigkeit und Besinnung."
+      },
+      {
+        "question": "Was ist die Bedeutung des Opfertiers zu Eid al-Adha?",
+        "answer": "Das Opfertier zu Eid al-Adha erinnert an die Hingabe des Propheten Ibrahim gegenüber Allah. Es symbolisiert die Bereitschaft, das Wertvollste für Allah zu opfern. Das Fleisch wird mit Familie, Freunden und Bedürftigen geteilt, was den Geist der Nächstenliebe und Gemeinschaft unterstreicht."
+      },
+      {
+        "question": "Wer ist verpflichtet, das Opfer (Qurbani) zu Eid al-Adha zu leisten?",
+        "answer": "Das Qurbani (Opfer) ist für Muslime verpflichtend, die finanziell dazu in der Lage sind. Es wird jenen empfohlen, die die Nisab-Grenze erreichen, ähnlich wie bei der Zakat (Almosensteuer)."
+      },
+      {
+        "question": "Wie führe ich das Qurbani (Opfer) zu Eid al-Adha durch?",
+        "answer": "Das Qurbani umfasst das Schlachten eines erlaubten Tieres, wie eines Schafs, einer Ziege, Kuh oder eines Kamels. Das Fleisch wird in drei Teile aufgeteilt: ein Teil für die Familie, ein Teil für Verwandte und Freunde, und ein Teil für die Bedürftigen."
+      },
+      {
+        "question": "Warum geben wir einen Teil des Qurbani-Fleisches an die Armen?",
+        "answer": "Das Spenden eines Teils des Qurbani-Fleisches an die Armen verkörpert den Geist des Teilens und Mitgefühls. Es ermöglicht Bedürftigen, am Fest teilzuhaben, stärkt den sozialen Zusammenhalt und fördert soziale Gerechtigkeit."
+      },
+      {
+        "question": "Welche Bedingungen gelten für das Qurbani-Opfer?",
+        "answer": "Zu den Bedingungen für das Qurbani zählen: man muss Muslim sein, das Erwachsenenalter erreicht haben und finanziell in der Lage sein. Das Opfertier muss bestimmte gesundheitliche und altersmäßige Anforderungen erfüllen."
+      },
+      {
+        "question": "Was ist der Zusammenhang zwischen Eid al-Adha und Wohltätigkeit?",
+        "answer": "Eid al-Adha hebt den Wert der Wohltätigkeit hervor. Durch das Qurbani folgen Muslime dem Beispiel des Propheten Ibrahim und zeigen Großzügigkeit, indem sie Nahrung mit Bedürftigen teilen, damit auch sie das Fest feiern können."
+      },
+      {
+        "question": "Wie berechne ich die Kosten für das Qurbani?",
+        "answer": "Die Kosten für das Qurbani hängen vom gewählten Tier ab. Dazu gehören der Kaufpreis sowie mögliche Schlachtkosten. In der Regel sind die Kosten für diejenigen erschwinglich, die die Nisab-Grenze erreicht haben."
+      },
+      {
+        "question": "Wann soll das Qurbani zu Eid al-Adha durchgeführt werden?",
+        "answer": "Das Qurbani sollte nach dem Eid-Gebet am 10. Tag des Dhu al-Hijjah durchgeführt werden und kann bis zum 13. Tag erfolgen."
+      },
+      {
+        "question": "Wie fördert Eid al-Adha den Wert des Opfers im Islam?",
+        "answer": "Eid al-Adha fördert den Wert des Opfers im Islam, indem Muslime dazu ermutigt werden, etwas Wertvolles für Allah zu opfern. Diese Selbstlosigkeit erinnert an Gehorsam, Großzügigkeit und das Wohl anderer vor das eigene zu stellen."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Zakat al-Maal und der Wohltätigkeit zu Eid al-Adha?",
+        "answer": "Zakat al-Maal ist eine jährliche Pflichtabgabe, während die Wohltätigkeit zu Eid al-Adha, einschließlich des Qurbani-Opfers, ein spezieller Akt der Hingabe ist. Beide dienen dem Zweck, Bedürftigen zu helfen, doch Eid al-Adha betont besonders Opferbereitschaft, Dankbarkeit und Gemeinschaft."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "„Weder ihr Fleisch noch ihr Blut erreicht Allah, sondern ihn erreicht eure Gottesfurcht.“",
+      "Ein Hinweis zum Eid al-Adha, dass die wahre Bedeutung des Opfers Aufrichtigkeit und Frömmigkeit ist."
+    ],
+    "source": "Koran, Sure Al-Hajj (22:37)"
+  }
+}

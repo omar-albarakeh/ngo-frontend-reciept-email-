@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Häufig gestellte Fragen zur Zakaat al-Maal",
+    "list": [
+      {
+        "question": "Was ist Zakaat al-Maal?",
+        "answer": "Zakaat al-Maal ist eine verpflichtende jährliche Abgabe, die Muslime auf ihr Vermögen wie Bargeld, Gold, Silber und Investitionen zahlen, wenn es ein Mondjahr lang gehalten wurde. Es ist eine der fünf Säulen des Islam."
+      },
+      {
+        "question": "Wer muss Zakaat al-Maal zahlen?",
+        "answer": "Jeder volljährige Muslim, der ein Jahr lang Vermögen über dem Nisab besitzt, muss Zakaat zahlen – vorausgesetzt, das Vermögen ist vollständig im Besitz und schuldenfrei."
+      },
+      {
+        "question": "Was ist der Nisab-Schwellenwert?",
+        "answer": "Der Nisab entspricht dem Mindestwert an Vermögen, ab dem Zakaat fällig wird. Er entspricht dem Wert von 85 Gramm Gold oder 595 Gramm Silber."
+      },
+      {
+        "question": "Wie hoch ist der Zakaat-Satz?",
+        "answer": "Der Standard-Zakaat-Satz beträgt 2,5 % des berechtigten Vermögens, das ein Mondjahr lang gehalten wurde."
+      },
+      {
+        "question": "Welche Vermögensarten unterliegen der Zakaat?",
+        "answer": "Zakaat ist fällig auf Bargeld, Ersparnisse, Gold, Silber, Geschäftsvermögen, Aktien und liquide Investitionen. Persönlicher Besitz wie Haus, Auto oder Kleidung ist ausgenommen."
+      },
+      {
+        "question": "Kann ich meine Zakaat online berechnen?",
+        "answer": "Ja, viele vertrauenswürdige Organisationen bieten Online-Zakaat-Rechner an. Sie können auch einen Gelehrten befragen oder unseren Rechner mit aktuellen Nisab-Werten verwenden."
+      },
+      {
+        "question": "Wer darf Zakaat erhalten?",
+        "answer": "Zakaat muss an die im Qur’an (Sure At-Tawbah 9:60) genannten Empfänger gegeben werden – z. B. Arme, Bedürftige oder Schuldner. Nahe Verwandte oder allgemeine Spendenprojekte sind ausgeschlossen."
+      },
+      {
+        "question": "Wann sollte ich Zakaat zahlen?",
+        "answer": "Zakaat ist fällig, wenn ein Mondjahr vergangen ist, seitdem Ihr Vermögen den Nisab überschritten hat. Viele zahlen sie im Ramadan für zusätzlichen Lohn."
+      },
+      {
+        "question": "Kann Zakaat für humanitäre Hilfe verwendet werden?",
+        "answer": "Ja, wenn die Empfänger anspruchsberechtigt sind, kann Zakaat für direkte Hilfe wie Nahrung oder medizinische Versorgung verwendet werden."
+      },
+      {
+        "question": "Kann ich Zakaat anonym geben?",
+        "answer": "Ja, Zakaat kann anonym gegeben werden, solange sie ordnungsgemäß an die Berechtigten weitergeleitet wird."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Nimm von ihrem Besitz eine Spende, um sie dadurch zu reinigen und zu läutern…\"",
+      "Zakaat reinigt dein Vermögen und hilft den Bedürftigen."
+    ],
+    "source": "Koran, Sure At-Tawbah (9:103)"
+  }
+}

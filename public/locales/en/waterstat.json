@@ -1,0 +1,25 @@
+{
+  "title": "Water Aid Impact in Palestine",
+  "donateMessage": "Your contribution helps provide clean water to Palestinian families — improving health, dignity, and daily life.",
+  "donateButton": "Help Provide Clean Water",
+  "stats": [
+    {
+      "icon": "FaFaucet",
+      "label": "Liters Distributed",
+      "count": "1,200,000+",
+      "note": "Clean water delivered to communities in need"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Families Reached",
+      "count": "8,500+",
+      "note": "Households supported with reliable water access"
+    },
+    {
+      "icon": "FaTools",
+      "label": "Wells Constructed",
+      "count": "75+",
+      "note": "Deep water wells built in underserved regions"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "donate": {
+    "heading": "Gemeinsam erheben wir uns",
+    "text": "Wenn wir gemeinsam geben, erheben wir alle. Ihre Unterstützung ist ein Licht in der dunkelsten Stunde eines Menschen. Stehen Sie mit uns, denn jede ausgestreckte Hand ist eine umarmte Seele.",
+    "button": "Schließen Sie sich der Sache an"
+  },
+  "whoWeAre": {
+    "title": "WER SIND WIR?",
+    "highlight": "Wir sind hier, um palästinensischen Familien zu helfen, zu überleben und mit Würde wieder aufzubauen.",
+    "whatWeDo": "Was wir tun",
+    "bulletPoints": {
+      "sos": "SOS Gaza – Notfallhilfe und humanitäre Unterstützung für Familien, die von der Krise in Gaza betroffen sind.",
+      "zakat": "Zakat Al-Maal – Erfüllen Sie Ihre jährliche Pflicht, indem Sie Ihre Zakat an Bedürftige spenden, gemäß den islamischen Prinzipien.",
+      "eid": "Aid Al-Adha – Teilen Sie die Segnungen des Eid, indem Sie zur Verteilung von Qurbani/Udhiya-Fleisch an arme Familien beitragen.",
+      "orphans": "Waisenpatenschaft – Bieten Sie wesentliche Unterstützung, Bildung und Pflege für Waisen für eine bessere und stabilere Zukunft.",
+      "water": "Wasser für Gaza – Helfen Sie, sauberes und sicheres Trinkwasser für Gemeinden bereitzustellen, die in Gaza unter Wasserknappheit leiden.",
+      "ramadan": "Ramadan-Spenden – Maximieren Sie Ihren Einfluss während des heiligen Monats, indem Sie Nahrung, Iftar-Mahlzeiten und notwendige Dinge für Bedürftige spenden."
+    },
+    "whyItMatters": "Warum es wichtig ist",
+    "whyItMattersText": "Jeden Tag sehen sich unschuldige Menschen unvorstellbaren Härten gegenüber. Mit Ihrer Hilfe bringen wir dort, wo es am meisten gebraucht wird, Hilfe und Hoffnung.",
+    "joinMovement": "Schließen Sie sich der Bewegung an",
+    "joinMovementText": "Ihre Unterstützung bedeutet alles. Gemeinsam können wir eine Zukunft aufbauen, in der jeder Palästinenser Zugang zu grundlegenden Menschenrechten hat und die Chance zu gedeihen.",
+    "donateButton": "EINE SPENDE MACHEN"
+  },
+  "verse": {
+    "text": "…wer einem Menschen das Leben erhält, ist, als ob er der ganzen Menschheit das Leben erhalten hätte.",
+    "source": "— Sure al-Ma'ida (5:32)"
+  }
+}

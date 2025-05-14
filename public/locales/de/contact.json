@@ -1,0 +1,24 @@
+{
+  "contact": {
+    "title": "Warum uns kontaktieren?",
+    "reasons": {
+      "learn": "Erfahren Sie mehr über unsere Projekte.",
+      "volunteer": "Beteiligen Sie sich an Freiwilligenarbeit.",
+      "questions": "Stellen Sie Fragen oder machen Sie Vorschläge.",
+      "partner": "Werden Sie Partner unserer Organisation."
+    },
+    "form": {
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "recaptcha": "Diese Seite ist durch reCAPTCHA geschützt und es gelten die Datenschutzrichtlinie und Nutzungsbedingungen von Google."
+    },
+    "success": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
+    "goHome": "Zur Startseite",
+    "newMessage": "Weitere Nachricht senden",
+    "errorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+  }
+}

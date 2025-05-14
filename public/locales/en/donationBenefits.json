@@ -1,0 +1,12 @@
+{
+  "title": "Bank Account Information",
+  "france": "France",
+  "switzerland": "Switzerland",
+  "IBAN_FR": "IBAN",
+  "BIC_FR": "BIC",
+  "IBAN_CH": "IBAN",
+  "copyIBAN_FR": "Copy IBAN",
+  "copyBIC_FR": "Copy BIC",
+  "copyIBAN_CH": "Copy IBAN",
+  "button": "Donate Now"
+}

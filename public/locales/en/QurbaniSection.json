@@ -1,0 +1,18 @@
+{
+ "timeLeft": "time left to donate for Eid al-Adha 2025 (1446AH)",
+  "goalText": "{{current}} out of {{goal}} donations collected",
+  "donationMessage": "Choose your sacrifice type:",
+  "clickToSelect": "Click to select this donation",
+  "donationTier": {
+    "sheep": "Sheep",
+    "share": "1/7 of a calf",
+    "full": "Full calf"
+  },
+  "milestone": {
+    "100": "🎉 100 donations reached!",
+    "200": "🎉 200 donations reached!",
+    "300": "🎉 300 donations reached!",
+    "400": "🎉 400 donations reached!",
+    "500": "🎉 Goal reached! May Allah accept your sacrifice!"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "timeLeft": "Verbleibende Zeit für Spenden zu Eid al-Adha 2025 (1446AH)",
+  "goalText": "{{current}} von {{goal}} Spenden gesammelt",
+  "donationMessage": "Wählen Sie Ihre Opferart:",
+  "clickToSelect": "Klicke, um diese Spende auszuwählen",
+  "donationTier": {
+    "sheep": "Schaf",
+    "share": "1/7 eines Kalbs",
+    "full": "Ganzes Kalb"
+  },
+  "milestone": {
+    "100": "🎉 100 Spenden erreicht!",
+    "200": "🎉 200 Spenden erreicht!",
+    "300": "🎉 300 Spenden erreicht!",
+    "400": "🎉 400 Spenden erreicht!",
+    "500": "🎉 Ziel erreicht! Möge Allah dein Opfer annehmen!"
+  }
+}

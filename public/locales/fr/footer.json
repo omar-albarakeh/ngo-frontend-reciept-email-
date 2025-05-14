@@ -1,0 +1,15 @@
+{
+  "footer": {
+    "followUs": "Suivez-nous :",
+    "contact": "Contact",
+    "address": "7 Rue de Pfastatt, 68110 Illzach, France",
+    "email": "contact@sospalestine.fr",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Restez informé de nos actions et actualités. Entrez votre e-mail ci-dessous :",
+      "placeholder": "Votre e-mail",
+      "button": "S'inscrire"
+    },
+    "rights": "© {{year}} SOS Palestine. Tous droits réservés"
+  }
+}

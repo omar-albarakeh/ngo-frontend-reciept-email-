@@ -1,0 +1,11 @@
+{
+  "taxTipTitle": " Wussten Sie schon?",
+  "taxReduction": "Spenden sind mit einer",
+  "taxReductionPercentage": "66% Steuerermäßigung",
+  "taxReductionLimit": "bis zu 20% Ihres zu versteuernden Einkommens förderfähig.",
+  "example": "Beispiel: Spenden Sie 100 € → Sparen Sie 66 € an Steuern.",
+  "reportText": "Tragen Sie Ihre Spende in Feld",
+  "form": "7UF des Formulars 2042 RICI ein",
+  "claimText": ", um Ihre Steuerermäßigung zu beantragen. Weitere Informationen finden Sie auf der offiziellen",
+  "frenchTaxWebsite": "französischen Steuerwebsite"
+}

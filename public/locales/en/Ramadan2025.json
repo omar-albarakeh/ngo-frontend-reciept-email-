@@ -1,0 +1,42 @@
+{
+  "faqs": {
+    "title": "Frequently Asked Questions about Donating in Ramadan",
+    "list": [
+      {
+        "question": "What is Ramadan?",
+        "answer": "Ramadan is the ninth month of the Islamic lunar calendar, observed by Muslims worldwide as a month of fasting, prayer, reflection, and community. It commemorates the first revelation of the Qur’an to Prophet Muhammad (peace be upon him)."
+      },
+      {
+        "question": "Why is giving charity important in Ramadan?",
+        "answer": "Charity during Ramadan carries immense reward. The Prophet Muhammad (peace be upon him) was described as the most generous, and even more so during Ramadan. Donations during this sacred month are spiritually multiplied."
+      },
+      {
+        "question": "What types of donations can I give during Ramadan?",
+        "answer": "You can give voluntary charity (Sadaqah), Zakaat al-Maal if it is due, and Zakaat al-Fitr before Eid. All forms of giving are encouraged, especially to help the poor, feed the hungry, and support humanitarian causes."
+      },
+      {
+        "question": "Is it better to donate at the beginning or end of Ramadan?",
+        "answer": "Any time in Ramadan is blessed, but the last ten nights—especially Laylat al-Qadr—carry special significance. Many Muslims choose to give during this time for greater reward."
+      },
+      {
+        "question": "Can I schedule my donations across the month?",
+        "answer": "Yes, spreading your donations throughout Ramadan is a great way to maintain consistent giving. Many platforms also allow you to automate daily or weekly donations."
+      },
+      {
+        "question": "How do my donations help during Ramadan?",
+        "answer": "Your donations provide food, clean water, medical care, and emergency aid to those in need—helping them observe Ramadan with dignity and joy."
+      },
+      {
+        "question": "Is donating online during Ramadan valid and accepted?",
+        "answer": "Yes, donations given online are valid as long as they reach eligible causes and people. Intention and sincerity are what matter most in Islam."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"The example of those who spend their wealth in the way of Allah is like a seed of grain which grows seven spikes...\"",
+      "Ramadan is a time when every good deed is multiplied—give generously."
+    ],
+    "source": "Qur'an, Surah Al-Baqarah (2:261)"
+  }
+}

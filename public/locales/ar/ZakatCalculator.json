@@ -1,0 +1,23 @@
+{
+  "zakat": {
+    "title": "حاسبة الزكاة",
+    "loading": "جارٍ تحميل الأسعار الحية...",
+    "error": "خطأ في تحميل الأسعار: {{message}}",
+    "gold": "الذهب",
+    "silver": "الفضة",
+    "grams": "غرامات",
+    "gram": "غرام",
+    "pricePerGram": "السعر ({{currency}}/غرام)",
+    "totalValue": "القيمة الإجمالية ({{currency}})",
+    "goldPrice": "سعر الذهب",
+    "silverPrice": "سعر الفضة",
+    "preciousMetals": "المعادن الثمينة",
+    "cashGroupLabel": "إجمالي النقد والأصول ({{currency}})",
+    "cashGroupNote": "نقد، أصول تجارية، استثمارات، مستحقات",
+    "totalZakatable": "إجمالي الأموال الخاضعة للزكاة",
+    "nisabThreshold": "نصاب الزكاة",
+    "zakatDue": "الزكاة الواجبة",
+    "noZakat": "لا زكاة مستحقة",
+    "donateNow": "تبرع الآن"
+  }
+}

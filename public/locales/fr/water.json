@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Questions Fréquemment Posées sur les Dons pour l'Eau Potable",
+    "list": [
+      {
+        "question": "Pourquoi l'accès à l'eau potable est-il si important ?",
+        "answer": "L'eau potable est essentielle à la vie. Elle prévient la propagation des maladies, soutient l'hygiène, permet l'éducation (surtout pour les filles) et renforce les communautés. Sans elle, la vie quotidienne devient une lutte constante."
+      },
+      {
+        "question": "Comment l'accès à l'eau améliore-t-il la santé ?",
+        "answer": "L'eau potable réduit considérablement les maladies liées à l'eau telles que le choléra et la dysenterie, qui sont particulièrement dangereuses pour les enfants. L'accès à l'assainissement et à l'hygiène sauve des vies et améliore le bien-être général."
+      },
+      {
+        "question": "Pourquoi devrais-je faire un don pour des projets d'eau ?",
+        "answer": "Votre don fournit un besoin humain fondamental — de l'eau potable. Il aide à construire des puits, à distribuer de l'eau dans les foyers et à installer des systèmes d'assainissement. Chaque contribution fait une différence tangible dans la vie de quelqu'un."
+      },
+      {
+        "question": "Où va mon don ?",
+        "answer": "Votre don soutient directement des initiatives pour l'eau potable — y compris la construction de puits, la fourniture de systèmes d'eau et l'installation de systèmes d'assainissement dans des communautés confrontées à la pénurie d'eau, comme en Palestine."
+      },
+      {
+        "question": "Comment l'accès à l'eau aide-t-il les femmes et les enfants ?",
+        "answer": "Les femmes et les enfants passent souvent des heures chaque jour à chercher de l'eau. En fournissant de l'eau plus près de chez eux, ils gagnent du temps pour l'éducation, le travail et la famille — ce qui permet de sortir des communautés de la pauvreté."
+      },
+      {
+        "question": "La distribution d'eau est-elle une forme de charité durable ?",
+        "answer": "Oui. Contrairement à l'aide à court terme, la construction d'infrastructures d'eau crée un changement à long terme et durable en permettant aux communautés d'avoir un accès continu à cette ressource vitale."
+      },
+      {
+        "question": "L'aide à l'eau peut-elle être utilisée pour la Zakat ?",
+        "answer": "Oui, si les projets d'eau bénéficient directement aux destinataires éligibles — tels que les pauvres, les nécessiteux ou les personnes en difficulté — alors la Zakat peut être utilisée pour ces projets, comme le préconisent les savants et les organisations caritatives."
+      },
+      {
+        "question": "Quelles régions bénéficient de mon don ?",
+        "answer": "Votre contribution aide les familles dans des zones comme Gaza et la Cisjordanie, où l'eau potable fait défaut en raison du conflit, des infrastructures détruites et des restrictions imposées par l'occupation."
+      },
+      {
+        "question": "Puis-je voir l'impact de mon don ?",
+        "answer": "Oui, de nombreuses organisations fournissent des rapports, des photos et des mises à jour montrant comment votre soutien transforme la vie des gens grâce à la distribution d'eau, à la construction de puits et aux programmes d'assainissement."
+      },
+      {
+        "question": "Un don pour l'eau est-il considéré comme Sadaqah Jariyah ?",
+        "answer": "Oui. Fournir de l'eau est l'une des meilleures formes de charité continue (Sadaqah Jariyah) — tant que cela continue à bénéficier aux gens, le donateur reçoit des récompenses même après sa mort."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Et Nous avons fait de l'eau toute chose vivante...\"",
+      "Fournir de l'eau n'est pas simplement de l'aide — c'est donner la vie, l'espoir et la dignité."
+    ],
+    "source": "Coran, Sourate Al-Anbiya (21:30)"
+  }
+}

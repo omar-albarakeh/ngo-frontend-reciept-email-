@@ -1,0 +1,40 @@
+{
+  "features": {
+    "title": "Nos Dernières Activités",
+    "initiatives": [
+      {
+        "id": "gazaWaterWell",
+        "title": "Construire un Puits à Gaza : Apaisez Leur Soif",
+        "description": "L'accès à l'eau potable est un droit fondamental, mais beaucoup à Gaza souffrent d'eau contaminée et rare. Aidez-nous à construire des puits durables pour fournir de l'eau potable aux familles, écoles et hôpitaux. Votre soutien sauve des vies et renforce les communautés.",
+        "highlights": [
+          "Fournir de l'eau potable chaque jour",
+          "Réduire les maladies hydriques",
+          "Autonomiser les communautés à long terme"
+        ],
+        "cta": "Financer un puits"
+      },
+      {
+        "id": "ramadan2025",
+        "title": "Ramadan 2025 : Un Mois de Miséricorde et de Générosité",
+        "description": "Participez à notre campagne de Ramadan 2025 pour nourrir les affamés, habiller les nécessiteux et soutenir les familles vulnérables. Votre générosité pendant ce mois sacré apporte chaleur, nourriture et joie aux orphelins, réfugiés et pauvres du monde entier.",
+        "highlights": [
+          "Livraison de repas d'Iftar et de Suhoor",
+          "Vêtements de l'Aïd pour les enfants",
+          "Paniers alimentaires mensuels pour les familles"
+        ],
+        "cta": "Contribuer pour le Ramadan"
+      },
+      {
+        "id": "adha2024",
+        "title": "Bénédictions de l’Aïd al-Adha 2024 : Partagez le Sacrifice, Répandez la Joie",
+        "description": "Votre Qurbani nourrit les affamés ! En ce Adha, rejoignez-nous pour distribuer de la viande fraîche et nutritive aux familles pauvres, orphelins et réfugiés. Votre sacrifice permet aux communautés vulnérables de célébrer dignement. Chaque don apporte des repas et de l'espoir.",
+        "highlights": [
+          "Nourrir une famille pour l'Aïd",
+          "Soutenir les veuves et les orphelins",
+          "Distribuer de la viande dans les zones de conflit"
+        ],
+        "cta": "Faire un don maintenant"
+      }
+    ]
+  }
+}

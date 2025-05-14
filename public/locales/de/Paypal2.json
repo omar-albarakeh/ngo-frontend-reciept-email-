@@ -1,0 +1,16 @@
+{
+  "backToDonation": "Zurück zum Spendenformular",
+  "completeYourDonation": "Schließen Sie Ihre Spende ab",
+  "retrying": "Wiederhole...",
+  "tryAgain": "Erneut versuchen",
+  "yourDonation": "Ihre Spende:",
+  "total": "Gesamt",
+  "includesProcessingFees": "Verarbeitungsgebühren von €{{feeAmount}} enthalten",
+  "settingUpPayment": "Einrichtung der sicheren Zahlung...",
+  "thankYou": "Danke, {{name}}!",
+  "amount": "Betrag",
+  "netReceived": "Netto erhalten",
+  "transactionId": "Transaktions-ID",
+  "receiptSentTo": "Eine Quittung wurde an {{email}} gesendet",
+  "returningIn": "Zurück zum Spendenformular in {{countdown}} Sekunden..."
+}

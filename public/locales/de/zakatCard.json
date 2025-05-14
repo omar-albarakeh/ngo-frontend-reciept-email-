@@ -1,0 +1,12 @@
+{
+  "zakatCard": {
+    "button1":  "Berechnen Sie Ihre Zakat",
+    "button2":  "Spenden Sie",
+    "heading": "Lernen Sie, wie Sie Ihre Zakat al-Maal berechnen",
+    "paragraph1": {
+      "bold": "Finden Sie schnell den Betrag Ihrer Zakat al-Maal",
+      "normal": "mit unserem einfachen Rechner. Bestimmen Sie Ihre fällige Zakat auf Gold, Silber, Ersparnisse und mehr. Unser Tool folgt den neuesten Nisab-Standards entsprechend den islamischen Richtlinien."
+    },
+    "paragraph2": "Nach der Berechnung können Sie vertrauensvoll an nachhaltige Initiativen spenden, die die Schwächsten unterstützen. Ihre Zakat wird dazu beitragen, Armut zu reduzieren, den Zugang zur Bildung zu fördern und die Gesundheitsversorgung für Bedürftige zu stärken. Gemeinsam ist Veränderung möglich."
+  }
+}

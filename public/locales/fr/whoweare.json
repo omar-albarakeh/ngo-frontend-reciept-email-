@@ -1,0 +1,29 @@
+{
+  "donate": {
+    "heading": "Ensemble, nous nous élevons",
+    "text": "Lorsque nous donnons à l’unisson, nous élevons tout le monde. Votre soutien est une lumière dans les heures les plus sombres de quelqu’un. Soyez à nos côtés, car chaque main tendue est une âme embrassée.",
+    "button": "Rejoignez la cause"
+  },
+  "whoWeAre": {
+    "title": "QUI SOMMES-NOUS ?",
+    "highlight": "Nous sommes ici pour aider les familles palestiniennes à survivre et à se reconstruire avec dignité.",
+    "whatWeDo": "Ce que nous faisons",
+    "bulletPoints": {
+      "sos": "SOS Gaza – Soutien d'urgence et aide humanitaire pour les familles touchées par la crise à Gaza.",
+      "zakat": "Zakat Al-Maal – Accomplissez votre obligation annuelle en donnant votre Zakat à ceux qui en ont besoin, conformément aux principes islamiques.",
+      "eid": "Aïd Al-Adha – Partagez les bénédictions de l'Aïd en contribuant à la distribution de viande de Qurbani/Udhiya pour les familles démunies.",
+      "orphans": "Parrainage d'orphelins – Offrez un soutien essentiel, de l'éducation et des soins aux orphelins pour un avenir meilleur et plus stable.",
+      "water": "Eau pour Gaza – Aidez à fournir de l'eau potable propre et sûre aux communautés souffrant de la pénurie d'eau à Gaza.",
+      "ramadan": "Dons de Ramadan – Maximisez votre impact pendant le mois sacré en faisant des dons de nourriture, de repas de rupture du jeûne et de produits de première nécessité pour ceux qui jeûnent dans la difficulté."
+    },
+    "whyItMatters": "Pourquoi c'est important",
+    "whyItMattersText": "Chaque jour, des innocents font face à des difficultés inimaginables. Avec votre aide, nous apportons soulagement et espoir là où cela est le plus nécessaire.",
+    "joinMovement": "Rejoignez le mouvement",
+    "joinMovementText": "Votre soutien signifie tout. Ensemble, nous pouvons construire un avenir où chaque Palestinien a accès aux droits humains fondamentaux et une chance de prospérer.",
+    "donateButton": "FAIRE UN DON"
+  },
+  "verse": {
+    "text": "…quiconque sauve une vie, c’est comme s’il avait sauvé toute l’humanité.",
+    "source": "— Sourate al-Ma'ida (5:32)"
+  }
+}

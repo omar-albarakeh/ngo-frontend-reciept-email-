@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Frequently Asked Questions about the SOS Gaza Campaign",
+    "list": [
+      {
+        "question": "What is the SOS Gaza campaign?",
+        "answer": "The SOS Gaza campaign is an emergency relief initiative aimed at providing essential aid such as food, water, medical supplies, and shelter to families affected by the ongoing crisis in Gaza."
+      },
+      {
+        "question": "Why is urgent aid needed in Gaza?",
+        "answer": "Due to ongoing conflict and blockade, many families in Gaza face severe shortages of necessities like clean water, electricity, and medical care. Urgent aid helps save lives and ease the suffering of civilians."
+      },
+      {
+        "question": "How are donations used in the SOS Gaza campaign?",
+        "answer": "Donations are directed toward emergency food parcels, clean drinking water, medicine, trauma support, and temporary housing for displaced families. Transparency and accountability are maintained throughout."
+      },
+      {
+        "question": "Is my donation Zakat-eligible?",
+        "answer": "Yes, donations to the SOS Gaza campaign can be given as Zakat, Sadaqah, or general charity, depending on your intention. We ensure that Zakat funds are distributed according to Islamic guidelines."
+      },
+      {
+        "question": "Can I donate specific items instead of money?",
+        "answer": "Currently, we only accept financial donations to streamline logistics and ensure aid is delivered quickly through local partners on the ground in Gaza."
+      },
+      {
+        "question": "How do I know my donation reached Gaza?",
+        "answer": "Our partners provide regular updates, photos, and reports on the distribution of aid. You can also subscribe to updates or check our campaign page for transparency reports."
+      },
+      {
+        "question": "Are there risks to the aid reaching Gaza?",
+        "answer": "While the situation is complex, we work with experienced humanitarian partners who have access to deliver aid directly and efficiently despite the challenges on the ground."
+      },
+      {
+        "question": "Can I donate anonymously?",
+        "answer": "Yes, we support anonymous donations. You will not be contacted unless you choose to subscribe to updates."
+      },
+      {
+        "question": "What is the most urgent need in Gaza right now?",
+        "answer": "Medical supplies, clean water, and food are among the most critical needs. Every donation helps provide life-saving support to vulnerable families."
+      },
+      {
+        "question": "How can I help beyond donating?",
+        "answer": "You can raise awareness by sharing the campaign, organizing local fundraisers, praying for those affected, and educating others about the humanitarian crisis in Gaza."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"And whoever saves one life—it is as if he had saved mankind entirely.\"",
+      "Let us be among those who bring relief and hope to Gaza in their time of greatest need."
+    ],
+    "source": "Qur'an, Surah Al-Ma'idah (5:32)"
+  }
+}

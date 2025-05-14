@@ -1,0 +1,23 @@
+{
+  "zakat": {
+    "title": "Zakat Calculator",
+    "loading": "Loading live prices...",
+    "error": "Error loading prices: {{message}}",
+    "gold": "Gold",
+    "silver": "Silver",
+    "grams": "grams",
+    "gram": "gram",
+    "pricePerGram": "Price ({{currency}}/gram)",
+    "totalValue": "Total Value ({{currency}})",
+    "goldPrice": "Gold Price",
+    "silverPrice": "Silver Price",
+    "preciousMetals": "Precious Metals",
+    "cashGroupLabel": "Total Cash & Assets ({{currency}})",
+    "cashGroupNote": "Cash, Business Assets, Investments, Receivables",
+    "totalZakatable": "Total Zakatable Amount",
+    "nisabThreshold": "Nisab Threshold",
+    "zakatDue": "Zakat Due",
+    "noZakat": "No Zakat is Due",
+    "donateNow": "Donate Now"
+  }
+}

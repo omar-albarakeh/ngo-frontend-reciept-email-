@@ -1,0 +1,25 @@
+{
+  "title": "Wasserhilfe in Palästina",
+  "donateMessage": "Ihre Spende hilft, palästinensische Familien mit sauberem Wasser zu versorgen — für mehr Gesundheit, Würde und Lebensqualität.",
+  "donateButton": "Sauberes Wasser spenden",
+  "stats": [
+    {
+      "icon": "FaFaucet",
+      "label": "Verteilte Liter",
+      "count": "1.200.000+",
+      "note": "Sauberes Wasser für bedürftige Gemeinden geliefert"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Erreichte Familien",
+      "count": "8.500+",
+      "note": "Haushalte mit zuverlässiger Wasserversorgung unterstützt"
+    },
+    {
+      "icon": "FaTools",
+      "label": "Gebaute Brunnen",
+      "count": "75+",
+      "note": "Tiefbrunnen in unterversorgten Regionen errichtet"
+    }
+  ]
+}

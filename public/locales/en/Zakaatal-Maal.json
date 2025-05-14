@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Frequently Asked Questions about Zakaat al-Maal",
+    "list": [
+      {
+        "question": "What is Zakaat al-Maal?",
+        "answer": "Zakaat al-Maal is an obligatory annual charity that Muslims must pay on wealth and assets held for a full lunar year, such as cash, gold, silver, and investments. It is one of the Five Pillars of Islam."
+      },
+      {
+        "question": "Who is required to pay Zakaat al-Maal?",
+        "answer": "Any adult Muslim who owns wealth above the Nisab threshold for one lunar year must pay Zakaat. The wealth must be fully owned and free from debts that reduce it below the Nisab."
+      },
+      {
+        "question": "What is the Nisab threshold?",
+        "answer": "The Nisab is the minimum amount of wealth one must have before being obligated to pay Zakaat. It is equivalent to the value of 85 grams of gold or 595 grams of silver."
+      },
+      {
+        "question": "How much is the Zakaat rate?",
+        "answer": "The standard rate for Zakaat al-Maal is 2.5% of qualifying wealth that has been held for a full lunar year."
+      },
+      {
+        "question": "What types of wealth are Zakaatable?",
+        "answer": "Zakaat is due on cash, savings, gold, silver, business assets, stocks, and other liquid investments. It is not due on personal items like your home, car, or clothes."
+      },
+      {
+        "question": "Can I calculate my Zakaat online?",
+        "answer": "Yes, many trustworthy organizations provide online Zakaat calculators. You can also consult a local scholar or use our calculator to estimate your obligation based on current Nisab values."
+      },
+      {
+        "question": "Who can receive Zakaat?",
+        "answer": "Zakaat must be given to eligible recipients listed in the Qur’an (Surah At-Tawbah 9:60), including the poor, the needy, and those in debt. It cannot be given to immediate family members or for general charity projects."
+      },
+      {
+        "question": "When should I pay Zakaat?",
+        "answer": "Zakaat becomes due after one lunar year has passed from the day your wealth first reached the Nisab. Many Muslims choose to pay during Ramadan for increased blessings."
+      },
+      {
+        "question": "Can Zakaat be used for emergency relief or humanitarian aid?",
+        "answer": "Yes, as long as the recipients meet the criteria of Zakaat eligibility, Zakaat can be used for food, medical care, and other forms of direct aid."
+      },
+      {
+        "question": "Can I give Zakaat anonymously?",
+        "answer": "Yes, you may give Zakaat without revealing your identity, as long as it reaches the eligible recipients properly."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Take from their wealth a charity by which you purify them and cause them increase...\"",
+      "Zakaat is a means to cleanse your wealth and support those in need."
+    ],
+    "source": "Qur'an, Surah At-Tawbah (9:103)"
+  }
+}

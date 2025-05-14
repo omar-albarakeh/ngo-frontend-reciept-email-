@@ -1,0 +1,12 @@
+{
+  "zakatCard": {
+    "button1": "Calculez votre Zakat",
+    "button2": "Faire un don",
+    "heading": "Apprenez à calculer votre Zakat al-Maal",
+    "paragraph1": {
+      "bold": "Trouvez rapidement le montant de votre Zakat al-Maal",
+      "normal": "grâce à notre calculatrice facile. Déterminez votre Zakat due sur l'or, l'argent, les économies et plus encore. Notre outil suit les dernières normes de Nisab pour respecter les directives islamiques."
+    },
+    "paragraph2": "Après le calcul, vous pouvez donner en toute confiance à des initiatives durables soutenant les plus vulnérables. Votre Zakat contribuera à réduire la pauvreté, à améliorer l'accès à l'éducation et à renforcer les soins de santé pour ceux qui en ont le plus besoin. Ensemble, le changement est possible."
+  }
+}

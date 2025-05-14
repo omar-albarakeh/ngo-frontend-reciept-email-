@@ -1,0 +1,11 @@
+{
+  "taxTipTitle": " Le saviez-vous ?",
+  "taxReduction": "Les dons ouvrent droit à une",
+  "taxReductionPercentage": "réduction d'impôt de 66 %",
+  "taxReductionLimit": "jusqu'à 20 % de votre revenu imposable.",
+  "example": "Exemple : Un don de 100 € → 66 € d'économie d'impôt.",
+  "reportText": "Déclarez votre don dans la case",
+  "form": "7UF du formulaire 2042 RICI",
+  "claimText": "pour bénéficier de votre réduction d'impôt. Pour plus de détails, consultez le site officiel",
+  "frenchTaxWebsite": "des impôts français"
+}

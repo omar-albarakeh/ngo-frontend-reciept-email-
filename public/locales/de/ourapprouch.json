@@ -1,0 +1,30 @@
+{
+  "ourApproach": {
+    "title": "UNSERE VORGEHENSWEISE",
+    "leftSection": {
+      "heading": "Gemeinsam können wir echten Wandel schaffen.",
+      "paragraph1": "Durch die Vereinigung unserer Kräfte können wir einen starken Einfluss auf das Leben der Palästinenser haben und ihnen helfen, eine hellere und vielversprechendere Zukunft zu gestalten.",
+      "paragraph2": "Ihre Unterstützung spielt eine entscheidende Rolle im Fortschritt unserer Mission. Ob durch eine finanzielle Spende oder durch Ihre Zeit als freiwilliger Helfer, Ihr Engagement ist von großer Bedeutung.",
+      "paragraph3": "Um einen echten Unterschied zu machen, laden wir Sie ein, an unserer Seite zu stehen - durch Spenden oder Freiwilligenarbeit - denn jeder Beitrag hilft, eine Zukunft voller Würde und Chancen zu schaffen."
+    },
+    "rightSection": {
+      "items": [
+        {
+          "number": "01.",
+          "title": "— Unsere Mission",
+          "text": "Wir setzen uns dafür ein, das tägliche Leben der Palästinenser zu verbessern, indem wir wesentliche Ressourcen bereitstellen, Bildung fördern und die Würde durch nachhaltige Unterstützung wiederherstellen."
+        },
+        {
+          "number": "02.",
+          "title": "— Unsere Vision",
+          "text": "Wir stellen uns eine Welt vor, in der die Palästinenser die Widrigkeiten überwinden, ihre Rechte zurückgewinnen und in einer sicheren, stabilen und gerechten Umgebung gedeihen können."
+        },
+        {
+          "number": "03.",
+          "title": "— Unsere Geschichte",
+          "text": "SOS Palestine wurde mit dem einzigen Ziel gegründet, den Palästinensern Unterstützung zu bieten, ihre Widerstandsfähigkeit zu fördern und ihnen eine Stimme für ihre Hoffnungen auf eine bessere Zukunft zu geben."
+        }
+      ]
+    }
+  }
+}

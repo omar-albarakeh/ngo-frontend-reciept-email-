@@ -1,0 +1,58 @@
+{
+  "faqs": {
+    "title": "Questions Fréquemment Posées sur l'Aïd al-Adha",
+    "list": [
+      {
+        "question": "Qu'est-ce que l'Aïd al-Adha ?",
+        "answer": "L'Aïd al-Adha, également appelée la Fête du Sacrifice, est une fête islamique majeure qui commémore la volonté du prophète Ibrahim (Abraham) de sacrifier son fils Ismaël par obéissance au commandement d'Allah. Elle marque la fin du pèlerinage du Hajj et est un moment de sacrifice, de charité et de réflexion."
+      },
+      {
+        "question": "Quelle est la signification du sacrifice animal pendant l'Aïd al-Adha ?",
+        "answer": "Le sacrifice animal pendant l'Aïd al-Adha commémore la dévotion du prophète Ibrahim envers Allah. Il symbolise la volonté de sacrifier ce que l'on a de plus précieux pour Allah. La viande est généralement partagée entre la famille, les amis et les personnes dans le besoin, mettant en valeur la charité et la solidarité."
+      },
+      {
+        "question": "Qui est tenu de faire le Qurbani (sacrifice) durant l'Aïd al-Adha ?",
+        "answer": "Le Qurbani (sacrifice) est obligatoire pour les musulmans qui en ont les moyens financiers. Il est recommandé à ceux qui atteignent le seuil de Nisab, comme c’est le cas pour le paiement de la Zakat."
+      },
+      {
+        "question": "Comment effectuer le Qurbani (sacrifice) pour l'Aïd al-Adha ?",
+        "answer": "Le Qurbani consiste à sacrifier un animal licite comme un mouton, une chèvre, une vache ou un chameau. La viande est ensuite divisée en trois parts : une pour la famille, une pour les proches et amis, et une pour les nécessiteux."
+      },
+      {
+        "question": "Pourquoi donner une partie de la viande du Qurbani aux pauvres ?",
+        "answer": "Donner une partie de la viande du Qurbani aux pauvres incarne l'esprit de partage et de compassion. Cela permet aux personnes dans le besoin de participer également aux célébrations de l'Aïd al-Adha, renforçant ainsi les liens communautaires et la justice sociale."
+      },
+      {
+        "question": "Quelles sont les conditions pour offrir le sacrifice du Qurbani ?",
+        "answer": "Les conditions pour offrir le Qurbani sont : être musulman, avoir atteint l’âge de la majorité, et avoir les moyens financiers nécessaires. L’animal doit répondre à des critères spécifiques de santé et d’âge."
+      },
+      {
+        "question": "Quel est le lien entre l'Aïd al-Adha et la charité ?",
+        "answer": "L'Aïd al-Adha met en avant l'importance de la charité. Par le Qurbani, les musulmans suivent l’exemple du prophète Ibrahim tout en faisant preuve de générosité en partageant la viande avec les plus démunis, afin qu'eux aussi puissent célébrer l'Aïd."
+      },
+      {
+        "question": "Comment calculer le coût du Qurbani ?",
+        "answer": "Le coût du Qurbani dépend de l’animal choisi et inclut le prix d’achat ainsi que les frais éventuels de l’abattage. En général, ce coût est accessible à ceux qui atteignent le seuil de Nisab, comme pour la Zakat."
+      },
+      {
+        "question": "Quand doit-on effectuer le Qurbani durant l'Aïd al-Adha ?",
+        "answer": "Le Qurbani doit être effectué après la prière de l'Aïd al-Adha, le 10ᵉ jour de Dhoul-Hijja, et peut être réalisé jusqu'au 13ᵉ jour de Dhoul-Hijja."
+      },
+      {
+        "question": "Comment l'Aïd al-Adha met-il en avant la valeur du sacrifice en islam ?",
+        "answer": "L'Aïd al-Adha valorise le sacrifice en islam en incitant les musulmans à renoncer à quelque chose de précieux pour Allah. Ce geste de générosité et d’obéissance rappelle l’importance de mettre les besoins des autres avant ses propres désirs."
+      },
+      {
+        "question": "Quelle est la différence entre la Zakat al-Maal et la charité pendant l'Aïd al-Adha ?",
+        "answer": "La Zakat al-Maal est une aumône obligatoire versée chaque année, tandis que la charité pendant l'Aïd al-Adha, notamment à travers le Qurbani, est un acte de dévotion spécifique à cette fête. Toutes deux visent à aider les nécessiteux, mais l'Aïd al-Adha met l'accent sur le sacrifice, la gratitude et la solidarité."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "« Ce ne sont ni leur chair ni leur sang qui atteindront Allah, mais ce qui L’atteint de votre part, c’est la piété. »",
+      "Un rappel pendant l’Aïd al-Adha que le véritable sens du sacrifice est la sincérité et la dévotion."
+    ],
+    "source": "Coran, Sourate Al-Hajj (22:37)"
+  }
+}

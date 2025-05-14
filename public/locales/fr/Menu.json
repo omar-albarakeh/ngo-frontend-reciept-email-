@@ -1,0 +1,37 @@
+{
+  "menu": {
+    "heading": "Nos Services",
+    "learnMore": "En savoir plus",
+    "donateNow": "Faire un don",
+    "aidAlAdha": {
+      "title": "Aïd al-Adha",
+      "subtitle": "Célébrez l'Aïd en partageant la joie avec les familles de Gaza. Faites un don : un mouton pour 250 €, un veau entier pour 1850 €, ou un septième de veau pour 260 €. Votre don permet d'offrir des sacrifices d'animaux pour réchauffer les cœurs.",
+      "learnMoreLink": "/aid-al-adha"
+    },
+    "sosGaza": {
+      "title": "Urgence Gaza",
+      "subtitle": "La population de Gaza vit sous des bombardements constants et une souffrance humanitaire extrême. Votre soutien urgent fournit nourriture, aide médicale et biens essentiels aux familles touchées.",
+      "learnMoreLink": "/sos-gaza"
+    },
+    "zakatAlMaal": {
+      "title": "Zakat Al-Maal",
+      "subtitle": "Accomplissez votre devoir religieux et améliorez des vies. La Zakat Al-Maal, l'un des cinq piliers de l'Islam, impose de donner 2,5 % de ses économies au-delà du seuil du nisab. Votre zakat soutient les secours humanitaires et des projets de développement durable.",
+      "learnMoreLink": "/zakat-al-maal"
+    },
+    "orphanSponsorship": {
+      "title": "Parrainage d'Orphelins",
+      "subtitle": "Ayez un impact durable sur la vie d'un enfant. Parrainez un orphelin pour lui offrir nourriture, éducation, soins médicaux et un sentiment d'appartenance.",
+      "learnMoreLink": "/orphan-sponsorship"
+    },
+    "waterForGaza": {
+      "title": "Eau potable pour Gaza",
+      "subtitle": "À Gaza, plus de 90 % de l'eau du robinet est impropre à la consommation en raison de la salinité et de la pollution. La contamination des nappes phréatiques dépasse 96 %. Aidez-nous à fournir une eau propre et sûre — une véritable bouée de sauvetage pour de nombreuses familles.",
+      "learnMoreLink": "/water-for-gaza"
+    },
+    "ramadan2025": {
+      "title": "Ramadan 2025",
+      "subtitle": "Faites de ce Ramadan une saison de générosité. Contribuez à fournir des repas d'iftar et des paniers alimentaires aux familles nécessiteuses, et apportez de la joie en ce mois sacré. Votre don fait toute la différence.",
+      "learnMoreLink": "/ramadan-2025"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.hero-sectionorphans {
+  position: relative;
+  background-image: url("/images/FeatureSectionB/orphans.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  color: rgb(0, 0, 0);
+  max-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.overlayorphans {
+  background: rgba(242, 237, 228, 0.463);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.hero-contentorphans {
+  max-width: 850px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-titleorphans {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+.hero-descriptionorphans {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 1.8rem;
+  padding: 0 1rem;
+}
+
+.hero-descriptionorphans strong {
+  color: #000000;
+}
+
+.hero-buttonorphans {
+  padding: 0.8rem 1.6rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttonorphans:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Tablet and small laptop */
+@media (max-width: 768px) {
+  .hero-titleorphans {
+    font-size: 2rem;
+  }
+
+  .hero-descriptionorphans {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .overlayorphans {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .hero-buttonorphans {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .hero-sectionorphans {
+    padding: 4rem 1rem;
+  }
+
+  .overlayorphans {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .hero-titleorphans {
+    font-size: 1.6rem;
+  }
+
+  .hero-descriptionorphans {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0;
+  }
+
+  .hero-buttonorphans {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

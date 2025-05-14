@@ -1,0 +1,40 @@
+{
+  "slider": [
+    {
+      "name": "SOS Gaza",
+      "description": "Seien Sie die Lebensader für Familien in Gaza durch Nahrung, Unterkunft und medizinische Versorgung",
+      "buttonText": "Jetzt spenden",
+      "link": "/donation"
+    },
+    {
+      "name": "Zakat",
+      "description": "Ihre Zakat bringt Hoffnung und stellt die Würde der Bedürftigen wieder her",
+      "buttonText": "Berechne deine Zakat",
+      "link": "/zakat-al-maal#zakat-calculator"
+    },
+    {
+      "name": "Ramadan 2025",
+      "description": "Füllen Sie ihre Tische mit Segen durch Ihre Großzügigkeit in diesem Ramadan",
+      "buttonText": "Jetzt spenden",
+      "link": "/donation"
+    },
+    {
+      "name": "Eid al-Adha",
+      "description": "Teilen Sie Ihr Opfer und bringen Sie Freude in die Herzen der Bedürftigen",
+      "buttonText": "Jetzt spenden",
+      "link": "/donation"
+    },
+    {
+      "name": "Waisenkind-Patenschaft",
+      "description": "Seien Sie Hoffnung und Unterstützung für ein wartendes Waisenkind",
+      "buttonText": "Jetzt spenden",
+      "link": "/donation"
+    },
+    {
+      "name": "Wasser für Gaza",
+      "description": "Stellen Sie sauberes, lebensrettendes Wasser für Familien in Gaza bereit",
+      "buttonText": "Jetzt spenden",
+      "link": "/donation"
+    }
+  ]
+}

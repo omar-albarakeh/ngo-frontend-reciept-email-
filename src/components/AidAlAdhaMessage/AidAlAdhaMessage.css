@@ -1,0 +1,58 @@
+.aid-message-container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+  font-family: var(--font-text);
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+.aid-message-title {
+  font-size: var(--font-size-title);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+  animation: slideInTop 0.7s ease-out both;
+}
+
+.aid-message-text {
+  font-size: var(--font-size-text);
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  animation: fadeInDelayed 1.2s ease-in both;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelayed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

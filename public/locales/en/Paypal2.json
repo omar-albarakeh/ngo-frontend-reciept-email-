@@ -1,0 +1,16 @@
+{
+  "backToDonation": "Back to donation form",
+  "completeYourDonation": "Complete Your Donation",
+  "retrying": "Retrying...",
+  "tryAgain": "Try Again",
+  "yourDonation": "Your Donation:",
+  "total": "Total",
+  "includesProcessingFees": "Includes €{{feeAmount}} processing fees",
+  "settingUpPayment": "Setting up secure payment...",
+  "thankYou": "Thank you, {{name}}!",
+  "amount": "Amount",
+  "netReceived": "Net received",
+  "transactionId": "Transaction ID",
+  "receiptSentTo": "A receipt has been sent to {{email}}",
+  "returningIn": "Returning to donation form in {{countdown}} seconds..."
+}

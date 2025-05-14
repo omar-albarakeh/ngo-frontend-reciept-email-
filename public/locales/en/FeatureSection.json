@@ -1,0 +1,50 @@
+{
+  "features": {
+    "title": " Our Latest Activities",
+    "initiatives": [
+      {
+        "id": "gazaWaterWell",
+        "title": " Build a Water Well in Gaza: Quench Their Thirst",
+        "description": "Access to clean water is a basic right, yet many in Gaza suffer from contaminated and scarce water. Help us build sustainable water wells that provide safe drinking water for families, schools, and hospitals. Your support saves lives and builds healthier communities.",
+        "impact": [
+          " Provide clean water daily",
+          " Reduce waterborne diseases",
+          " Empower communities long-term"
+        ],
+        "highlights": [
+          " Provide clean water daily",
+          " Reduce waterborne diseases",
+          " Empower communities long-term"
+        ],
+        "cta": "Fund a Well"
+      },
+      {
+        "id": "ramadan2025",
+        "title": " Ramadan 2025: A Month of Mercy & Giving",
+        "description": "Join our 2025 Ramadan campaign to feed the hungry, clothe the needy, and support vulnerable families. Your generosity during this holy month brings warmth, sustenance, and joy to orphans, refugees, and the poor worldwide.",
+        "features": [
+          " Iftar & Suhoor meal delivery",
+          " Eid clothing for children",
+          " Monthly food baskets for families"
+        ],
+        "highlights": [
+          " Iftar & Suhoor meal delivery",
+          " Eid clothing for children",
+          " Monthly food baskets for families"
+        ],
+        "cta": "Contribute This Ramadan"
+      },
+      {
+        "id": "adha2024",
+        "title": " Blessings of Adha 2024: Share the Sacrifice, Spread Joy",
+        "description": "Your Qurbani Feeds the Hungry! This Adha, join us in delivering fresh, nutritious meat to impoverished families, orphans, and refugees. Your sacrifice ensures that vulnerable communities celebrate Eid with dignity and joy. Every donation provides wholesome meals and hope to those in need.",
+        "highlights": [
+          " Feed a family for Eid",
+          " Support widows & orphans",
+          " Distribute meat in conflict zones"
+        ],
+        "cta": "Donate Now"
+      }
+    ]
+  }
+}

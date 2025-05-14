@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Häufig gestellte Fragen zum Waisenkind-Patenschaftsprogramm",
+    "list": [
+      {
+        "question": "Was ist das Waisenkind-Patenschaftsprogramm?",
+        "answer": "Das Waisenkind-Patenschaftsprogramm bietet grundlegende Unterstützung wie Nahrung, Bildung, Gesundheitsversorgung und emotionale Betreuung, damit Waisenkinder in einer sicheren und förderlichen Umgebung aufwachsen können."
+      },
+      {
+        "question": "Wie funktioniert die Patenschaft für ein Waisenkind?",
+        "answer": "Als Pate hilft Ihre monatliche Spende dabei, die Grundbedürfnisse eines Waisenkindes zu decken. Je nach Richtlinien erhalten Sie regelmäßig Updates über das Kind."
+      },
+      {
+        "question": "Wie viel kostet eine Patenschaft?",
+        "answer": "Die Patenschaft beginnt meist mit einem festen monatlichen Betrag, der je nach Region und Betreuungsniveau variiert. Siehe unsere Spendenseite für Details."
+      },
+      {
+        "question": "Ist meine Patenschaft Zakat-fähig?",
+        "answer": "Ja, wenn die Mittel für bedürftige Waisenkinder verwendet werden, ist Ihre Patenschaft Zakat-fähig. Wir achten auf eine korrekte islamische Verteilung."
+      },
+      {
+        "question": "Kann ich ein bestimmtes Waisenkind auswählen?",
+        "answer": "In den meisten Fällen ja. Einige Programme erlauben die Auswahl nach Alter, Geschlecht oder Region. Andernfalls wird nach Dringlichkeit zugewiesen."
+      },
+      {
+        "question": "Erhalte ich Informationen über das Kind?",
+        "answer": "Ja, Paten erhalten in der Regel ein- oder zweimal im Jahr Berichte mit Fotos und allgemeinen Informationen über das Kind."
+      },
+      {
+        "question": "Kann ich Geschenke oder Briefe senden?",
+        "answer": "Einige Programme erlauben dies unter bestimmten Bedingungen, um die Privatsphäre und Würde des Kindes zu wahren. Bitte beim Programm nachfragen."
+      },
+      {
+        "question": "Kann ich einmalig spenden statt monatlich?",
+        "answer": "Ja, Einzelspenden helfen ungesponserten Waisen oder fördern Programme für mehrere Kinder."
+      },
+      {
+        "question": "Was passiert, wenn ich nicht weitermachen kann?",
+        "answer": "Wir verstehen Veränderungen. Wenn Sie aufhören müssen, suchen wir einen neuen Paten, damit die Unterstützung weiterläuft."
+      },
+      {
+        "question": "Wie kann ich sonst helfen?",
+        "answer": "Sie können das Projekt teilen, Spendenaktionen starten, ehrenamtlich mithelfen oder allgemein spenden."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "\"Sie fragen dich, was sie ausgeben sollen. Sprich: Was ihr an Gutem ausgebt, soll für die Eltern, die Verwandten, die Waisen... sein.\"",
+      "Lasst uns gemeinsam Waisen Hoffnung, Fürsorge und Würde schenken."
+    ],
+    "source": "Koran, Sure Al-Baqara (2:215)"
+  }
+}

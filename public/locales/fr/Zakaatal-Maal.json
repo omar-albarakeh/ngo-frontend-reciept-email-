@@ -1,0 +1,54 @@
+{
+  "faqs": {
+    "title": "Questions fréquentes sur la Zakaat al-Maal",
+    "list": [
+      {
+        "question": "Qu'est-ce que la Zakaat al-Maal ?",
+        "answer": "La Zakaat al-Maal est une aumône annuelle obligatoire que les musulmans doivent verser sur les richesses détenues pendant une année lunaire, comme l'argent liquide, l'or, l'argent et les investissements. C’est un des cinq piliers de l'Islam."
+      },
+      {
+        "question": "Qui doit payer la Zakaat al-Maal ?",
+        "answer": "Tout musulman adulte possédant une richesse au-dessus du seuil du Nisab pendant un an lunaire complet doit payer la Zakaat, à condition que cette richesse soit entièrement détenue et sans dettes importantes."
+      },
+      {
+        "question": "Quel est le seuil du Nisab ?",
+        "answer": "Le Nisab correspond à la valeur minimale de richesse à posséder pour que la Zakaat soit due. Il équivaut à 85 grammes d’or ou 595 grammes d’argent."
+      },
+      {
+        "question": "Quel est le taux de la Zakaat ?",
+        "answer": "Le taux standard de la Zakaat al-Maal est de 2,5 % des richesses détenues pendant une année lunaire."
+      },
+      {
+        "question": "Quels types de biens sont concernés par la Zakaat ?",
+        "answer": "L’argent liquide, les économies, l’or, l’argent, les actifs commerciaux, les actions et les investissements liquides. Les biens personnels comme la maison, la voiture ou les vêtements ne sont pas concernés."
+      },
+      {
+        "question": "Puis-je calculer ma Zakaat en ligne ?",
+        "answer": "Oui, plusieurs organisations fiables proposent des calculateurs de Zakaat en ligne. Vous pouvez également consulter un érudit ou utiliser notre outil basé sur les valeurs actuelles du Nisab."
+      },
+      {
+        "question": "Qui peut recevoir la Zakaat ?",
+        "answer": "La Zakaat doit être donnée aux bénéficiaires mentionnés dans le Coran (Sourate At-Tawbah 9:60), tels que les pauvres et les nécessiteux. Elle ne peut pas être donnée aux proches directs ou à des œuvres caritatives générales."
+      },
+      {
+        "question": "Quand dois-je payer la Zakaat ?",
+        "answer": "La Zakaat est due après un an lunaire depuis le moment où la richesse atteint le Nisab. Beaucoup choisissent de la payer pendant le Ramadan pour plus de récompenses."
+      },
+      {
+        "question": "La Zakaat peut-elle être utilisée pour l’aide humanitaire ?",
+        "answer": "Oui, tant que les bénéficiaires sont éligibles à la Zakaat, elle peut financer des besoins essentiels comme la nourriture ou les soins médicaux."
+      },
+      {
+        "question": "Puis-je donner la Zakaat de manière anonyme ?",
+        "answer": "Oui, vous pouvez donner la Zakaat de façon anonyme, tant qu’elle parvient correctement aux bénéficiaires."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "« Prélève une aumône de leurs biens par laquelle tu les purifies et les élèveras… »",
+      "La Zakaat purifie vos biens et soutient les nécessiteux."
+    ],
+    "source": "Coran, Sourate At-Tawbah (9:103)"
+  }
+}

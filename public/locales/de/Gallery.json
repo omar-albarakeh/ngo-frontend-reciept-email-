@@ -1,0 +1,38 @@
+{
+  "campaigns": {
+    "title": "Unsere Spendenkampagnen",
+    "subtitle": "Entdecken Sie unsere laufenden und vergangenen Initiativen. Klicken Sie auf ein Projekt, um die Bilder zu sehen.",
+    "ramadan2025": {
+      "title": "Ramadan 2025",
+      "description": "Verteilen Sie Iftar-Mahlzeiten und wichtige Hilfen während des Ramadan 2025."
+    },
+    "waterForGaza": {
+      "title": "Wasser für Gaza",
+      "description": "Zugang zu sauberem Trinkwasser für Gemeinden in Gaza bereitstellen."
+    },
+    "sosGaza": {
+      "title": "Kleiderverteilung",
+      "description": "Nothilfe und humanitäre Unterstützung für die Bewohner von Gaza."
+    },
+    "zakatAlMaal": {
+      "title": "Zakat Al Maal",
+      "description": "Erfüllen Sie Ihre jährliche Zakat-Pflicht und helfen Sie Bedürftigen."
+    },
+    "waterwell": {
+      "title": "Brunnenprojekt",
+      "description": "Brunnen bauen, um nachhaltigen Zugang zu sauberem Wasser zu ermöglichen."
+    },
+    "GazaEmergency": {
+      "title": "Gaza-Notfall",
+      "description": "Soforthilfe und Unterstützung für Betroffene in Gaza während Notlagen leisten."
+    },
+    "orphanSponsorship": {
+      "title": "Waisenpatenschaft",
+      "description": "Waisen durch Bildung, Gesundheitsversorgung und tägliche Bedürfnisse unterstützen."
+    },
+    "aidAlAdha": {
+      "title": "Opferfest",
+      "description": "Verteilung von Qurbani-Fleisch an bedürftige Familien zum Eid al-Adha."
+    }
+  }
+}

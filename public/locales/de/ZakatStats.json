@@ -1,0 +1,31 @@
+{
+  "title": "Zakaat al-Maal Auswirkungen Statistik",
+  "donateMessage": "Ihre Zakaat erreicht die Bedürftigsten – lindern Sie Schulden, bekämpfen Sie Hunger und stellen Sie Würde wieder her.",
+  "donateButton": "Jetzt Zakaat spenden",
+  "stats": [
+    {
+      "icon": "FaCoins",
+      "label": "Finanzielle Hilfe",
+      "count": "12.000+",
+      "note": "Bargeldhilfe für die Armen und Bedürftigen"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Familienunterstützung",
+      "count": "20.000+",
+      "note": "Laufende Betreuung und Unterstützung für gefährdete Familien durch Ihre Zakaat"
+    },
+    {
+      "icon": "FaTshirt",
+      "label": "Verteilte Kleidung",
+      "count": "18.000+",
+      "note": "Würdige und warme Kleidung für Bedürftige bereitgestellt"
+    },
+    {
+      "icon": "FaHandHoldingUsd",
+      "label": "Schuldenbefreiungsfälle",
+      "count": "1.100+",
+      "note": "Für berechtigte Personen durch Zakaat gelöscht"
+    }
+  ]
+}

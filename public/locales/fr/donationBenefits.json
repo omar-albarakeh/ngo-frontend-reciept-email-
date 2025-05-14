@@ -1,0 +1,12 @@
+{
+  "title": "Informations sur le compte bancaire",
+  "france": "France",
+  "switzerland": "Suisse",
+  "IBAN_FR": "IBAN",
+  "BIC_FR": "BIC",
+  "IBAN_CH": "IBAN",
+  "copyIBAN_FR": "Copier l'IBAN",
+  "copyBIC_FR": "Copier le BIC",
+  "copyIBAN_CH": "Copier l'IBAN",
+  "button": "Faire un don"
+}

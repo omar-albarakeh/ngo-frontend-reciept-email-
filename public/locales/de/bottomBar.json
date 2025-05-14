@@ -1,0 +1,16 @@
+{
+  "title": "Unterstütze eine Sache",
+  "placeholder": "Betrag (z. B. 50)",
+  "donate": "Jetzt beitragen",
+  "close": "Schließen",
+  "causes": {
+    "aidAlAdha": "Eid al-Adha",
+    "sosGaza": "Notfall für Gaza",
+    "zakatAlMaal": "Zakat al-Maal",
+    "ramadan": "Ramadan-Kampagne",
+    "orphanSponsorship": "Waisenpatenschaft",
+    "waterForGaza": "Wasser für Gaza",
+    "InGeneral": "Allgemeine Unterstützung",
+    "ZakatFitr": "Zakat al-Fitr"
+  }
+}

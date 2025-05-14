@@ -1,0 +1,141 @@
+/* QurbaniSection.css */
+
+.donate-box {
+  background: #f0fdf4;
+  border: 0.125rem solid #16a34a;
+  padding: clamp(1rem, 4vw, 2rem);
+  text-align: center;
+}
+
+.countdown-timer {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: #064e3b;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-container {
+  margin: 1rem 0;
+}
+
+.progress-text {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #065f46;
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+}
+
+.progress-bar {
+  height: 1rem;
+  width: 100%;
+  background: #d1fae5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16a34a;
+  transition: width 0.4s ease;
+}
+
+.milestone {
+  margin-top: 0.5rem;
+  color: #15803d;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.donation-message {
+  margin-top: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: #065f46;
+  font-weight: 500;
+}
+
+.donation-tiers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.donate-tier-btn {
+  flex: 1 1 auto;
+  min-width: clamp(10rem, 40%, 20rem);
+  min-height: 4rem;
+  max-width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.donate-tier-btn .emoji {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+
+.donate-tier-btn:hover {
+  background-color: #15803d;
+}
+
+.donate-tier-btn.selected {
+  box-shadow: 0 0 0 0.1875rem #bbf7d0;
+}
+
+.donation-inline-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.package-instruction {
+  color: red;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+.donation-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .donate-tier-btn {
+    flex: 1 1 100%;
+    white-space: normal;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .donate-tier-btn .emoji {
+    margin-right: 0.25rem;
+  }
+
+  .donation-inline-row {
+    flex-direction: column;
+  }
+}
+
+.time-value {
+  color: #dc2626;
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+{
+  "slider": [
+    {
+      "name": "غزة SOS",
+      "description": "كن شريان الحياة لعائلات غزة من خلال توفير الغذاء والمأوى والرعاية الطبية",
+      "buttonText": "تبرع الآن",
+      "link": "/donation"
+    },
+    {
+      "name": "الزكاة",
+      "description": "زكاتك تفتح أبواب الأمل وتعيد الكرامة للمحتاجين",
+      "buttonText": "احسب زكاتك",
+      "link": "/zakat-al-maal#zakat-calculator"
+    },
+    {
+      "name": "رمضان 2025",
+      "description": "املأ موائدهم بالبركة من خلال كرمك في هذا رمضان",
+      "buttonText": "تبرع الآن",
+      "link": "/donation"
+    },
+    {
+      "name": "عيد الأضحى",
+      "description": "شارك أضحيتك وأدخل البهجة إلى قلوب المحتاجين",
+      "buttonText": "تبرع الآن",
+      "link": "/donation"
+    },
+    {
+      "name": "كفالة الأيتام",
+      "description": "كن الأمل والدعم ليتيم في انتظارك",
+      "buttonText": "تبرع الآن",
+      "link": "/donation"
+    },
+    {
+      "name": "مياه لغزة",
+      "description": "وفر حلولاً نظيفة ومنقذة للحياة لمياه غزة",
+      "buttonText": "تبرع الآن",
+      "link": "/donation"
+    }
+  ]
+}

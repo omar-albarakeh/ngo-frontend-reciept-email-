@@ -1,0 +1,220 @@
+/* ========== Base Container ========== */
+.slider-container {
+  width: 100%;
+  max-width: 86vw;
+  min-height: 60vh;
+  padding: clamp(2rem, 5vw, 3.75rem) clamp(1rem, 4vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+  background-color: var(--background-light);
+}
+
+/* ========== Headings ========== */
+.slider-heading-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.slider-heading-sub {
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.slider-full-gallery-btn-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-inline-text {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.slider-full-gallery-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.slider-full-gallery-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ========== Slider Wrapper ========== */
+.slider-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 75rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 150rem;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.slide {
+  position: absolute;
+  width: clamp(12rem, 25vw, 20rem);
+  height: clamp(16rem, 35vw, 27.5rem);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1.563rem 3.125rem rgba(0, 0, 0, 0.15);
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Overlay ========== */
+.slide-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.7rem);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+/* ========== Glow ========== */
+.slide-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 5rem 2rem rgba(255, 174, 201, 0.25);
+  filter: blur(1rem);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ========== Arrows ========== */
+.slider-arrow {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  width: clamp(2rem, 4vw, 3rem);
+  height: clamp(2rem, 4vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+}
+
+.slider-arrow:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-arrow svg {
+  width: 60%;
+  height: 60%;
+  stroke: #fff;
+  stroke-width: 2;
+  fill: none;
+}
+
+.slider-arrow.prev {
+  left: clamp(0.5rem, 2vw, 2rem);
+}
+
+.slider-arrow.next {
+  right: clamp(0.5rem, 2vw, 2rem);
+}
+
+/* ========== Dots ========== */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 1.5vw, 1.5rem);
+  padding: 0 1rem;
+}
+
+.dot {
+  width: clamp(0.5rem, 1vw, 1.25rem);
+  height: clamp(0.5rem, 1vw, 1.25rem);
+  min-width: 0.625rem;
+  min-height: 0.625rem;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.dot.active {
+  background: linear-gradient(90deg, #4caf50, #032204);
+  transform: scale(1.4);
+}
+
+/* ========== Responsive Fixes ========== */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    height: 22rem;
+  }
+
+  .slide {
+    width: 16rem;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider-container {
+    min-height: 50vh;
+  }
+
+  .slider-wrapper {
+    height: 19rem;
+  }
+
+  .slide {
+    width: 14rem;
+    height: 19rem;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+}

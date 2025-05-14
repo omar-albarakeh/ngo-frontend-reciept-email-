@@ -1,0 +1,31 @@
+{
+  "title": "Impact of Your Zakaat During Ramadan",
+  "donateMessage": "This Ramadan, your Zakaat goes even further. Help relieve suffering, uplift communities, and earn multiplied rewards during this blessed month.",
+  "donateButton": "Donate Your Zakaat Now",
+  "stats": [
+    {
+      "icon": "FaHandsHelping",
+      "label": "Kaswet Aid Provided",
+      "count": "15,000+",
+      "note": "Delivering essential aid and support through the Kaswet initiative to those in need during Ramadan."
+    },
+    {
+      "icon": "FaUtensils",
+      "label": "Ramadan Iftar Meals",
+      "count": "28,000+",
+      "note": "Distributing hot, nutritious Iftar meals to help families break their fast with dignity."
+    },
+    {
+      "icon": "FaBox",
+      "label": "Food Packages Distributed",
+      "count": "5,000+",
+      "note": "Providing vital food supplies to struggling households for the entire month of Ramadan."
+    },
+    {
+      "icon": "FaDonate",
+      "label": "Zakaat Contributions",
+      "count": "12,000+",
+      "note": "Empowering lives and fulfilling religious duty through your generous Zakaat donations."
+    }
+  ]
+}

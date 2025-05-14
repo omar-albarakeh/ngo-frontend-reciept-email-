@@ -1,0 +1,24 @@
+{
+  "contact": {
+    "title": "Pourquoi nous contacter ?",
+    "reasons": {
+      "learn": "En savoir plus sur nos projets.",
+      "volunteer": "Participer au bénévolat.",
+      "questions": "Poser vos questions ou suggestions.",
+      "partner": "Devenir partenaire de notre organisation."
+    },
+    "form": {
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Écrivez votre message ici...",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "recaptcha": "Ce site est protégé par reCAPTCHA et la politique de confidentialité et les conditions d'utilisation de Google s'appliquent."
+    },
+    "success": "Merci ! Votre message a été envoyé avec succès.",
+    "goHome": "Retour à l'accueil",
+    "newMessage": "Envoyer un autre message",
+    "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+  }
+}

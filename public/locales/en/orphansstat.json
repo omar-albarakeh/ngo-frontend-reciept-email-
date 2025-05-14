@@ -1,0 +1,13 @@
+{
+  "title": "Orphan Sponsorship Impact Stats",
+  "donateMessage": "Your sponsorship provides orphans with a better life, access to education, and care. Help ensure their bright future.",
+  "donateButton": "Sponsor an Orphan Now",
+  "stats": [
+    {
+      "icon": "FaHandsHelping",
+      "label": "Orphan Sponsorships",
+      "count": "10,000+",
+      "note": "Providing sponsorship and care for orphans during this blessed month"
+    }
+  ]
+}

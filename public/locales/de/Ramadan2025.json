@@ -1,0 +1,42 @@
+{
+  "faqs": {
+    "title": "Häufig gestellte Fragen zum Spenden im Ramadan",
+    "list": [
+      {
+        "question": "Was ist der Ramadan?",
+        "answer": "Der Ramadan ist der neunte Monat des islamischen Mondkalenders. Muslime fasten von Sonnenaufgang bis Sonnenuntergang und widmen sich Gebet, Koranlesen und Wohltätigkeit."
+      },
+      {
+        "question": "Warum ist das Spenden im Ramadan wichtig?",
+        "answer": "Spenden im Ramadan bringen großen Lohn. Der Prophet Muhammad (Friede sei mit ihm) war der großzügigste Mensch – besonders im Ramadan. Gute Taten werden vervielfacht."
+      },
+      {
+        "question": "Welche Arten von Spenden kann ich im Ramadan geben?",
+        "answer": "Sie können freiwillige Spenden (Sadaqah), Zakat al-Mal (falls fällig) und Zakat al-Fitr vor dem Eid leisten. Jede Form der Wohltätigkeit ist willkommen."
+      },
+      {
+        "question": "Ist es besser, am Anfang oder Ende des Ramadan zu spenden?",
+        "answer": "Jeder Moment im Ramadan ist segensreich, aber die letzten zehn Nächte – besonders die Nacht der Bestimmung (Laylat al-Qadr) – sind besonders belohnend."
+      },
+      {
+        "question": "Kann ich meine Spenden über den Monat verteilen?",
+        "answer": "Ja, das regelmäßige Spenden im Ramadan ist empfehlenswert. Viele Plattformen bieten automatisierte tägliche oder wöchentliche Spenden an."
+      },
+      {
+        "question": "Wie helfen meine Spenden im Ramadan?",
+        "answer": "Ihre Spenden liefern Nahrung, sauberes Wasser, medizinische Hilfe und Nothilfe für Bedürftige – und helfen ihnen, Ramadan in Würde zu begehen."
+      },
+      {
+        "question": "Sind Online-Spenden im Ramadan gültig?",
+        "answer": "Ja, Online-Spenden sind gültig, solange sie aufrichtig gegeben werden und die Bedürftigen erreichen. Die Absicht zählt am meisten im Islam."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "„Das Gleichnis derer, die ihr Vermögen auf Allahs Weg ausgeben, ist das eines Samenkorns, das sieben Ähren treibt…“",
+      "Im Ramadan wird jede gute Tat vervielfacht – spenden Sie großzügig."
+    ],
+    "source": "Koran, Sure Al-Baqara (2:261)"
+  }
+}

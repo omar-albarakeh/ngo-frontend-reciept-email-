@@ -1,0 +1,30 @@
+{
+  "ourApproach": {
+    "title": "OUR APPROACH",
+    "leftSection": {
+      "heading": "Together, we can create real change.",
+      "paragraph1": "By uniting our efforts, we can make a powerful impact on the lives of Palestinians and help them shape a brighter, more hopeful future.",
+      "paragraph2": "Your support plays a vital role in driving our mission forward. Whether through a financial donation or by offering your time as a volunteer, your involvement matters deeply.",
+      "paragraph3": "To truly make a difference, we invite you to stand with us—through giving or volunteering—because every contribution helps build a future filled with dignity and opportunity."
+    },
+    "rightSection": {
+      "items": [
+        {
+          "number": "01.",
+          "title": "— Our Mission",
+          "text": "We are dedicated to improving the daily lives of Palestinians by providing essential resources, promoting education, and restoring dignity through sustainable support."
+        },
+        {
+          "number": "02.",
+          "title": "— Our Vision",
+          "text": "We envision a world where Palestinians can overcome adversity, reclaim their rights, and thrive in a safe, stable, and just environment."
+        },
+        {
+          "number": "03.",
+          "title": "— Our Story",
+          "text": "SOS Palestine was founded with a single purpose: to stand in solidarity with Palestinians by offering real support, fostering resilience, and giving voice to their hopes for a better tomorrow."
+        }
+      ]
+    }
+  }
+}

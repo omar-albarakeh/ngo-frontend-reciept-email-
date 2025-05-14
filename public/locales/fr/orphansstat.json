@@ -1,0 +1,13 @@
+{
+  "title": "Statistiques d'impact du parrainage d'orphelins",
+  "donateMessage": "Votre parrainage offre aux orphelins une vie meilleure, un accès à l'éducation et des soins. Aidez à garantir leur avenir prometteur.",
+  "donateButton": "Parrainez un orphelin maintenant",
+  "stats": [
+    {
+      "icon": "FaHandsHelping",
+      "label": "Parrainages d'orphelins",
+      "count": "10 000+",
+      "note": "Fournir un parrainage et des soins pour les orphelins pendant ce mois béni"
+    }
+  ]
+}

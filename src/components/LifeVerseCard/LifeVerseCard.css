@@ -1,0 +1,75 @@
+.verse-card-wrapper {
+  width: 100%;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verse-card {
+  width: 100%;
+  max-width: 75rem;
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: 1.75rem;
+  box-shadow: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.verse-card:hover {
+  transform: scale(1.03);
+}
+
+.verse-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+.verse-source {
+  font-size: 1.1rem;
+  color: #4b5563;
+  font-weight: 600;
+  margin-top: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .verse-card-wrapper {
+    padding: 3rem 1.5rem;
+  }
+
+  .verse-card {
+    padding: 1.5rem;
+  }
+
+  .verse-text {
+    font-size: 1.1rem;
+  }
+
+  .verse-source {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .verse-card-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .verse-card {
+    padding: 1.25rem;
+  }
+
+  .verse-text {
+    font-size: 1rem;
+  }
+
+  .verse-source {
+    font-size: 0.95rem;
+  }
+}

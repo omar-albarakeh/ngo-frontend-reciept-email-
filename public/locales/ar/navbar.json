@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "Welcome": "مرحبًا",
+    "gallery": "معرض الصور",
+    "ourServices": "خدماتنا",
+    "whoWeAre": {
+      "title": "معلومات عنا",
+      "whoAreWe": "من نحن",
+      "history": "تاريخنا"
+    },
+    "services": {
+      "sosGaza": "نداء غزة",
+      "zakatAlMaal": "زكاة المال",
+      "ramadan2025": "رمضان 2025",
+      "aidAlAdha": "عيد الأضحى",
+      "orphanSponsorship": "كفالة الأيتام",
+      "waterForGaza": "ماء لغزة"
+    },
+    "contactUs": "اتصل بنا",
+    "donateNow": "تبرع الآن",
+    "follow-us": " تابعنا على"
+  }
+}

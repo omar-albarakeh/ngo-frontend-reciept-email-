@@ -1,0 +1,16 @@
+{
+  "title": "ادعم قضية",
+  "placeholder": "المبلغ (مثال: 50)",
+  "donate": "ساهم الآن",
+  "close": "إغلاق",
+  "causes": {
+    "aidAlAdha": "عيد الأضحى",
+    "sosGaza": "حالة طوارئ لغزة",
+    "zakatAlMaal": "زكاة المال",
+    "ramadan": "حملة رمضان",
+    "orphanSponsorship": "اكفل يتيماً",
+    "waterForGaza": "ماء لغزة",
+    "InGeneral": "دعم عام",
+    "ZakatFitr": "زكاة الفطر"
+  }
+}

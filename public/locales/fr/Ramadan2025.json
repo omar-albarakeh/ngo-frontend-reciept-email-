@@ -1,0 +1,42 @@
+{
+  "faqs": {
+    "title": "Questions fréquentes sur les dons pendant le Ramadan",
+    "list": [
+      {
+        "question": "Qu'est-ce que le Ramadan ?",
+        "answer": "Le Ramadan est le neuvième mois du calendrier lunaire islamique. C'est une période de jeûne, de prière, de réflexion et de solidarité spirituelle."
+      },
+      {
+        "question": "Pourquoi faire un don pendant le Ramadan ?",
+        "answer": "Le don en Ramadan est particulièrement méritoire. Le Prophète (paix sur lui) était très généreux, encore plus pendant le Ramadan. Les récompenses sont multipliées."
+      },
+      {
+        "question": "Quels types de dons peut-on faire pendant le Ramadan ?",
+        "answer": "Vous pouvez donner la sadaqa volontaire, la zakât al-Mâl si elle est due, et la zakât al-Fitr avant l'Aïd. Toute forme de charité est encouragée pendant ce mois sacré."
+      },
+      {
+        "question": "Est-il préférable de donner en début ou en fin de Ramadan ?",
+        "answer": "Chaque moment du Ramadan est béni, mais les dix dernières nuits, en particulier Laylat al-Qadr, sont très spéciales et les récompenses y sont accrues."
+      },
+      {
+        "question": "Puis-je répartir mes dons tout au long du mois ?",
+        "answer": "Oui, étaler vos dons sur le mois est recommandé. Certaines plateformes permettent d’automatiser des dons quotidiens ou hebdomadaires."
+      },
+      {
+        "question": "Comment mes dons aident-ils pendant le Ramadan ?",
+        "answer": "Vos dons permettent de nourrir les nécessiteux, d’apporter de l’eau potable, des soins médicaux et une aide humanitaire urgente."
+      },
+      {
+        "question": "Les dons en ligne pendant le Ramadan sont-ils valides ?",
+        "answer": "Oui, les dons en ligne sont valides tant qu’ils sont sincères et atteignent les bénéficiaires légitimes. L’intention est ce qui compte le plus."
+      }
+    ]
+  },
+  "verse": {
+    "sentences": [
+      "« L’exemple de ceux qui dépensent leurs biens dans le sentier d’Allah est semblable à un grain qui donne sept épis… »",
+      "Pendant le Ramadan, chaque bonne action est multipliée. Donnez généreusement."
+    ],
+    "source": "Coran, Sourate Al-Baqarah (2:261)"
+  }
+}

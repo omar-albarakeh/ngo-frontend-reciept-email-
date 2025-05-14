@@ -1,0 +1,31 @@
+.custom-navbar {
+  position: relative;
+  width: 100%;
+  z-index: 1050;
+  background-color: #f2ede4;
+  transition: background-color var(--transition-speed) ease, top 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2ede4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1090px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

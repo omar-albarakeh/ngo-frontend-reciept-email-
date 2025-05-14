@@ -1,0 +1,31 @@
+{
+  "title": "Die Wirkung Ihrer Zakat im Ramadan",
+  "donateMessage": "In diesem gesegneten Monat wirkt Ihre Zakat noch stärker. Helfen Sie, Leid zu lindern, Gemeinschaften zu unterstützen und mehrfachen Lohn zu erhalten.",
+  "donateButton": "Zakat jetzt spenden",
+  "stats": [
+    {
+      "icon": "FaHandsHelping",
+      "label": "Kaswet-Hilfe geleistet",
+      "count": "15.000+",
+      "note": "Wichtige Hilfe und Unterstützung über die Kaswet-Initiative im Ramadan bereitgestellt."
+    },
+    {
+      "icon": "FaUtensils",
+      "label": "Iftar-Mahlzeiten im Ramadan",
+      "count": "28.000+",
+      "note": "Verteilung von heißen, nahrhaften Iftar-Mahlzeiten, damit Familien würdevoll fasten können."
+    },
+    {
+      "icon": "FaBox",
+      "label": "Lebensmittelpakete verteilt",
+      "count": "5.000+",
+      "note": "Bereitstellung grundlegender Lebensmittel für bedürftige Haushalte während des ganzen Ramadans."
+    },
+    {
+      "icon": "FaDonate",
+      "label": "Zakat-Spenden",
+      "count": "12.000+",
+      "note": "Leben verändern und religiöse Pflicht erfüllen durch großzügige Zakat-Beiträge."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Während des Eid al-Adha haben wir folgende Hilfe geleistet",
+  "donateMessage": "Hilf uns, diese Zahlen dieses Jahr zu steigern",
+  "donateButton": "Jetzt spenden",
+  "stats": [
+    {
+      "icon": "GiCow",
+      "label": "Geschlachtete Kühe",
+      "count": "4.500",
+      "mealsDistributed": "45.000 Mahlzeiten"
+    },
+    {
+      "icon": "GiSheep",
+      "label": "Geschlachtete Schafe",
+      "count": "6.000",
+      "mealsDistributed": "36.000 Mahlzeiten"
+    },
+    {
+      "icon": "FaHandsHelping",
+      "label": "Unterstützte Familien",
+      "count": "35.000 Familien"
+    },
+    {
+      "icon": "GiCardboardBox",
+      "label": "Gelieferte Fleischpakete",
+      "count": "150.000 Pakete"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+.youtube-gallery {
+  max-width: 78rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: var(--background-light);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.video-heading {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  color: #111;
+  margin-bottom: clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+
+.slider-full-gallery-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.gallery-inline-text {
+  font-size: var(--font-size-text);
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.slider-full-gallery-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-text);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-full-gallery-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.slider-full-gallery-btn .youtube-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 32rem; /* Match height of cards + padding */
+  direction: ltr;
+}
+
+.scroll-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: var(--font-xl);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.scroll-btn:hover:not(.disabled) {
+  transform: translateY(-50%) scale(1.1);
+  background-color: var(--primary-hover);
+}
+
+.scroll-btn.left {
+  left: -1.5rem;
+}
+
+.scroll-btn.right {
+  right: -1.5rem;
+}
+
+.scroll-btn.disabled {
+  background-color: var(--text-light);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.youtube-card-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.youtube-card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.youtube-card {
+  flex: 0 0 20rem;
+  background: linear-gradient(145deg, #ffffff, var(--background-light));
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.youtube-card:hover {
+  transform: translateY(-0.625rem);
+  box-shadow: 0 1.25rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-video {
+  width: 100%;
+  height: 10.25rem;
+  background: #000;
+}
+
+.card-info {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-info h3 {
+  font-size: var(--font-sm);
+  font-family: var(--font-subtitle);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.card-info h3:hover {
+  color: var(--primary-color);
+}
+
+.card-info p {
+  font-size: var(--font-sm);
+  font-family: var(--font-text);
+  color: #666;
+  line-height: 1.6;
+  max-height: 7rem;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .youtube-card {
+    flex: 0 0 17.5rem;
+  }
+
+  .youtube-card-list {
+    gap: 1.5rem;
+  }
+
+  .scroll-btn {
+    width: 2.625rem;
+    height: 2.625rem;
+    font-size: var(--font-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube-gallery {
+    padding: 1rem;
+  }
+
+  .video-heading {
+    font-size: var(--font-xl);
+  }
+
+  .youtube-card {
+    flex: 0 0 85%;
+  }
+
+  .scroll-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: var(--font-md);
+  }
+
+  .scroll-btn.left {
+    left: 0.5rem;
+  }
+
+  .scroll-btn.right {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-gallery {
+    margin: 1rem auto;
+  }
+
+  .video-heading {
+    font-size: var(--font-md);
+  }
+
+  .youtube-card {
+    flex: 0 0 95%;
+  }
+
+  .card-info {
+    padding: 1rem;
+  }
+
+  .card-info h3 {
+    font-size: var(--font-md);
+  }
+
+  .card-info p {
+    font-size: var(--font-sm);
+  }
+
+  .scroll-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--font-sm);
+  }
+
+  .slider-full-gallery-btn-wrapper {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
