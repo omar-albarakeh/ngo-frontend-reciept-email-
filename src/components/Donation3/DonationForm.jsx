@@ -6,7 +6,6 @@ import {
   FaArrowLeft,
   FaSpinner,
 } from "react-icons/fa";
-import emailjs from "emailjs-com";
 import "./donations.css";
 import { useTranslation } from "react-i18next";
 
@@ -108,6 +107,8 @@ const DonationForm = ({ onProceedToPayment }) => {
       donationCart: cart,
       total: calculateTotal(),
       coverFees,
+      requestReceipt,
+      receiptData,
     });
   };
 
@@ -284,10 +285,53 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
 
   const backendUrl =
     import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+    const backendUrl2 =
+      import.meta.env.VITE_BACKEND_URL2 || "http://localhost:5001";
 
   const amount = donationData?.total?.toFixed(2) || "0.00";
   const cause =
     donationData?.donationCart?.[0]?.causeLabel || t("paypal.generalDonation");
+  const downloadPdfReceipt = async ({
+    backendUrl,
+    donationData,
+    transactionId,
+  }) => {
+    try {
+      const totalInWords = writtenNumber(Math.floor(donationData.total), {
+        lang: "fr",
+      });
+      const response = await fetch(
+        `${backendUrl}/generate-receipt-or-thankyou`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            receiptData: donationData.receiptData,
+            donationCart: donationData.donationCart,
+            total: donationData.total,
+            totalInWords,
+            transactionId,
+            paymentDate: new Date().toISOString(),
+          }),
+        }
+      );
+
+      const data = await response.json();
+      if (data.pdfBase64) {
+        const link = document.createElement("a");
+        link.href = `data:application/pdf;base64,${data.pdfBase64}`;
+        link.download = "donation-receipt.pdf";
+        link.click();
+        console.debug("PDF receipt downloaded.");
+      } else {
+        console.warn("PDF receipt not generated.");
+      }
+    } catch (err) {
+      console.error("Error generating PDF receipt:", err);
+    }
+  };
 
   // Countdown
   useEffect(() => {
@@ -455,6 +499,7 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
         },
         onApprove: async (data, actions) => {
           console.debug("Payment approved, capturing order...");
+
           try {
             const details = await actions.order.capture();
             console.debug("Payment details:", details);
@@ -473,27 +518,47 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
             });
             setCountdown(20);
 
-            console.debug("Sending receipt email...");
-            emailjs
-              .send(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID_Donating,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID_Donating,
-                {
-                  to_email: donorEmail,
-                  donor_name: name,
-                  donation_amount: amountPaid,
-                  transaction_id: transactionId,
-                },
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY_Donating
-              )
-              .then(
-                (response) => {
-                  console.debug("Email sent:", response);
-                },
-                (error) => {
-                  console.error("Email sending failed:", error);
+            // Handle backend receipt/thank-you email
+            if (donationData?.requestReceipt || donationData?.requestThankYou) {
+              console.debug("Calling /generate-receipt-or-thankyou...");
+              try {
+                const receiptPayload = {
+                  name: donationData?.receiptData?.name || name,
+                  surname: donationData?.receiptData?.surname || "",
+                  address: donationData?.receiptData?.address || "",
+                  postalCode: donationData?.receiptData?.postalCode || "",
+                  city: donationData?.receiptData?.city || "",
+                  amount: amountPaid,
+                  amountText: donationData?.receiptData?.amountText || "",
+                  email: donorEmail,
+                };
+
+                const receiptRes = await fetch(
+                  `${backendUrl2}/generate-receipt-or-thankyou`,
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(receiptPayload),
+                  }
+                );
+
+                const receiptJson = await receiptRes.json();
+
+                if (receiptRes.ok) {
+                  console.debug("Backend response:", receiptJson.message);
+                  alert("📧 Email envoyé avec succès !");
+                } else {
+                  console.error("Receipt endpoint error:", receiptJson.error);
                 }
-              );
+              } catch (receiptErr) {
+                console.error(
+                  "Error calling /generate-receipt-or-thankyou:",
+                  receiptErr
+                );
+              }
+            }
           } catch (err) {
             console.error("Order capture failed:", err);
             setPaymentStatus("error");
