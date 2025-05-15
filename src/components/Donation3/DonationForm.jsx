@@ -283,10 +283,7 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
   const isMounted = useRef(true);
   const { t } = useTranslation("donations");
 
-  const backendUrl =
-    import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
-    const backendUrl2 =
-      import.meta.env.VITE_BACKEND_URL2 || "http://localhost:5001";
+  const backendUrl =import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
   const amount = donationData?.total?.toFixed(2) || "0.00";
   const cause =
