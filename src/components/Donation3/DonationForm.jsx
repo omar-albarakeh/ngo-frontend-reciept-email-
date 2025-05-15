@@ -531,7 +531,7 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
                 };
 
                 const receiptRes = await fetch(
-                  `${backendUrl2}/generate-receipt-or-thankyou`,
+                  `${backendUrl}/generate-receipt-or-thankyou`,
                   {
                     method: "POST",
                     headers: {
