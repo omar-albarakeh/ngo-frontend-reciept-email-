@@ -504,8 +504,8 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
             const name = details.payer.name?.given_name || "Donor";
             const amountPaid = details.purchase_units[0].amount.value;
             const transactionId = details.id;
-            // const donorEmail = details.payer.email_address;
-            const donorEmail = "omarbarakeh20002@gmail.com";
+            const donorEmail = details.payer.email_address;
+            // const donorEmail = "omarbarakeh20002@gmail.com";
 
             setPaymentStatus("success");
             setPaymentDetails({
