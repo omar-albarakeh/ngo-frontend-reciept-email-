@@ -25,7 +25,7 @@ const ImpactMessage = () => {
             className="impact-card-img"
           />
           <img
-            src="/images/AidAlAdha/adha15.webp"
+            src="/images/AidAlAdha/adha40.webp"
             alt={t("imageAlt2")}
             className="impact-card-img"
           />

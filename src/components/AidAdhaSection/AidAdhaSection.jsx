@@ -10,7 +10,7 @@ const AidAdhaSection = () => {
   return (
     <div className="aid-section">
       <div className="aid-triangle">
-        <img src="/images/AidAlAdha/adha29.webp" alt="Qurbani distribution" />
+        <img src="/images/AidAlAdha/adha40.webp" alt="Qurbani distribution" />
       </div>
       <div className="aid-content">
         <h2>{t("aidAdha.heading")}</h2>
