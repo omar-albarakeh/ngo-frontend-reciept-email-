@@ -29,26 +29,26 @@ function App() {
     document.documentElement.dir = dir;
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
+
   return (
     <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate to="/aid-al-adha" />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/WhoWeAre" element={<Whoweare />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/Donations" element={<Donations />} />
-        <Route path="/donation" element={<Donation1 />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/Whoweare" element={<Whoweare />} />
-        <Route path="/History" element={<History />} />
+        {/* French Routes */}
+        <Route path="/accueil" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/qui-sommes-nous" element={<Whoweare />} />
+        <Route path="/histoire" element={<History />} />
+        <Route path="/dons" element={<Donations />} />
+        <Route path="/faire-un-don" element={<Donation1 />} />
+        <Route path="/galerie" element={<Gallery />} />
         <Route path="/sos-gaza" element={<SOSGaza />} />
         <Route path="/zakat-al-maal" element={<ZakatAlmal />} />
         <Route path="/ramadan-2025" element={<Ramadan2025 />} />
         <Route path="/aid-al-adha" element={<Aidaladha />} />
-        <Route path="/orphan-sponsorship" element={<Orphansponsorship />} />
-        <Route path="/water-for-gaza" element={<Waterforgaza />} />
+        <Route path="/parrainage-orphelins" element={<Orphansponsorship />} />
+        <Route path="/eau-pour-gaza" element={<Waterforgaza />} />
       </Routes>
     </Router>
   );

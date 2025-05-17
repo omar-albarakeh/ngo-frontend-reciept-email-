@@ -19,7 +19,7 @@ const BottomBar = ({ layout = "bottom" }) => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
       setIsMobile(mobile);
-      // Do NOT set isOpen here to prevent closing on keyboard resize
+      if (!mobile) setIsOpen(true);
     };
 
     window.addEventListener("resize", handleResize);
@@ -30,6 +30,8 @@ const BottomBar = ({ layout = "bottom" }) => {
   useEffect(() => {
     if (!isMobile) {
       setIsOpen(true);
+    } else {
+      setIsOpen(false);
     }
   }, [isMobile]);
 
@@ -40,6 +42,9 @@ const BottomBar = ({ layout = "bottom" }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setFooterInView(entry.isIntersecting);
+        if (entry.isIntersecting && isMobile) {
+          setIsOpen(false);
+        }
       },
       {
         root: null,
@@ -49,7 +54,7 @@ const BottomBar = ({ layout = "bottom" }) => {
 
     observer.observe(trigger);
     return () => observer.disconnect();
-  }, []);
+  }, [isMobile]);
 
   // Apply class to body for left sidebar layout
   useEffect(() => {
@@ -69,58 +74,71 @@ const BottomBar = ({ layout = "bottom" }) => {
 
     localStorage.setItem("donationAmount", parsedAmount.toString());
     localStorage.setItem("donationCause", cause);
-    navigate("/donation");
+    navigate("/faire-un-don");
+  };
+
+  const handleClosePanel = () => {
+    setIsOpen(false);
   };
 
   const barClass = `bottom-bar ${layout} ${
     footerInView && layout === "bottom" ? "bottom-bar-static" : ""
-  }`;
-
-  const bottomBarContent = (
-    <div className={barClass}>
-      <span className="bottom-bar-title">{t("title")}</span>
-
-      <input
-        type="number"
-        placeholder={t("placeholder")}
-        className="bottom-bar-input"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-      />
-
-      <select
-        className="bottom-bar-select"
-        value={cause}
-        onChange={(e) => setCause(e.target.value)}>
-        <option value="aidAlAdha">{t("causes.aidAlAdha")}</option>
-        <option value="sosGaza">{t("causes.sosGaza")}</option>
-        <option value="zakatAlMaal">{t("causes.zakatAlMaal")}</option>
-        <option value="ramadanDonations">{t("causes.ramadan")}</option>
-        <option value="orphanSponsorship">
-          {t("causes.orphanSponsorship")}
-        </option>
-        <option value="waterForGaza">{t("causes.waterForGaza")}</option>
-        <option value="inGeneral">{t("causes.InGeneral")}</option>
-        <option value="zakatFitr">{t("causes.ZakatFitr")}</option>
-      </select>
-
-      <CustomButton titleKey={t("donate")} onClick={handleDonateClick} />
-    </div>
-  );
+  } ${isMobile ? "mobile" : ""}`;
 
   return (
     <>
-      {isOpen &&
-        (!isMobile && footerInView && layout === "bottom" ? (
-          <div className="bottom-bar-wrapper">{bottomBarContent}</div>
-        ) : isMobile && footerInView && layout === "bottom" ? null : (
-          bottomBarContent
-        ))}
+      {isOpen && (
+        <div className={barClass}>
+          {isMobile && (
+            <button className="bottom-bar-close" onClick={handleClosePanel}>
+              ×
+            </button>
+          )}
+          <span className="bottom-bar-title">{t("title")}</span>
+
+          <input
+            type="number"
+            placeholder={t("placeholder")}
+            className="bottom-bar-input"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            min="1"
+          />
+
+          <select
+            className="bottom-bar-select"
+            value={cause}
+            onChange={(e) => setCause(e.target.value)}>
+            <option value="aidAlAdha">{t("causes.aidAlAdha")}</option>
+            <option value="sosGaza">{t("causes.sosGaza")}</option>
+            <option value="zakatAlMaal">{t("causes.zakatAlMaal")}</option>
+            <option value="ramadanDonations">{t("causes.ramadan")}</option>
+            <option value="orphanSponsorship">
+              {t("causes.orphanSponsorship")}
+            </option>
+            <option value="waterForGaza">{t("causes.waterForGaza")}</option>
+            <option value="inGeneral">{t("causes.InGeneral")}</option>
+            <option value="zakatFitr">{t("causes.ZakatFitr")}</option>
+          </select>
+
+          <CustomButton
+            titleKey={t("donate")}
+            onClick={handleDonateClick}
+            className="bottom-bar-button"
+          />
+        </div>
+      )}
 
       {isMobile && layout === "bottom" && !footerInView && (
-        <div className="bottom-bar-toggle" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="bottom-bar-toggle"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+          aria-label={isOpen ? t("close") : t("donate")}
+          role="button"
+          tabIndex={0}>
           {isOpen ? t("close") : t("donate")}
-        </div>
+        </button>
       )}
     </>
   );

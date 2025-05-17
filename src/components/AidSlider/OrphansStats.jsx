@@ -16,7 +16,7 @@ const OrphansStats = () => {
       <h2>{t("title")}</h2>
       <div className="assist-donate-section">
         <p>{t("donateMessage")}</p>
-        <a href="/donation" className="assist-donate-button">
+        <a href="/faire-un-don" className="assist-donate-button">
           {t("donateButton")}
         </a>
       </div>

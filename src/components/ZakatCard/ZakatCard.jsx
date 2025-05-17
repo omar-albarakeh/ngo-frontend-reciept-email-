@@ -24,7 +24,9 @@ const ZakatCalculator = () => {
             onClick={() => navigate("/zakat-al-maal#zakat-calculator")}>
             {t("zakatCard.button1")}
           </button>
-          <button className="ZakatButton" onClick={() => navigate("/donation")}>
+          <button
+            className="ZakatButton"
+            onClick={() => navigate("/faire-un-don")}>
             {t("zakatCard.button2")}
           </button>
         </div>

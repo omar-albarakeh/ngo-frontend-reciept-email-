@@ -39,7 +39,7 @@ const FeatureSection = () => {
             {item.urgency && <p className="urgency-text">{item.urgency}</p>}
             <button
               className="FeatureButton"
-              onClick={() => navigate("/donation")}>
+              onClick={() => navigate("/faire-un-don")}>
               {item.cta}
             </button>
           </div>

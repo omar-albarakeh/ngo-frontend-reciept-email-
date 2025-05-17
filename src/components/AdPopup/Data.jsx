@@ -1,7 +1,7 @@
 const adsData = [
   {
     message: "ads.clickToViewBankInfo",
-    link: "/donation/?tab=bank",
+    link: "/don/?tab=bank",
     useRouter: true,
     delay: 1000,
   },

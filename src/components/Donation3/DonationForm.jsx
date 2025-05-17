@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import "./donations.css";
 import { useTranslation } from "react-i18next";
+import writtenNumber from "written-number";
 
 const causes = {
   aidAlAdha: "causes.aidAlAdha",
@@ -28,6 +29,7 @@ const DonationForm = ({ onProceedToPayment }) => {
     address: "",
     postalCode: "",
     city: "",
+    email: "",
   });
 
   const { t } = useTranslation("donations");
@@ -233,6 +235,14 @@ const DonationForm = ({ onProceedToPayment }) => {
                 required
               />
               <input
+                type="email"
+                name="email"
+                placeholder={t("donationForm.emailLabel") || "Email"}
+                value={receiptData.email}
+                onChange={handleReceiptChange}
+                required
+              />
+              <input
                 type="text"
                 name="address"
                 placeholder={t("donationForm.address")}
@@ -283,54 +293,205 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
   const isMounted = useRef(true);
   const { t } = useTranslation("donations");
 
-  const backendUrl =import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+  const backendUrl =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
-  const amount = donationData?.total?.toFixed(2) || "0.00";
-  const cause =
-    donationData?.donationCart?.[0]?.causeLabel || t("paypal.generalDonation");
-  const downloadPdfReceipt = async ({
-    backendUrl,
-    donationData,
-    transactionId,
-  }) => {
+  useEffect(() => {
+    isMounted.current = true;
+    setLoading(true);
+    loadPayPalSDK();
+
+    return () => {
+      isMounted.current = false;
+      cleanupPayPal();
+    };
+  }, [retryCount]);
+
+  const loadPayPalSDK = async () => {
     try {
-      const totalInWords = writtenNumber(Math.floor(donationData.total), {
-        lang: "fr",
-      });
+      const res = await fetch(`${backendUrl}/config/paypal`);
+      const { clientId } = await res.json();
+
+      // Remove existing PayPal SDK
+      document
+        .querySelectorAll('script[src*="paypal.com/sdk/js"]')
+        .forEach((el) => el.remove());
+
+      const script = document.createElement("script");
+      script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=EUR&enable-funding=card&disable-funding=paylater&components=buttons`;
+      script.async = true;
+
+      script.onload = () => {
+        if (isMounted.current) {
+          setSdkReady(true);
+          setErrorMessage(null);
+          setLoading(false);
+        }
+      };
+
+      script.onerror = () => {
+        if (isMounted.current) {
+          setErrorMessage("Failed to load PayPal SDK. Please try again.");
+          setLoading(false);
+        }
+      };
+
+      document.body.appendChild(script);
+    } catch (err) {
+      if (isMounted.current) {
+        setErrorMessage("Failed to fetch PayPal configuration");
+        setLoading(false);
+      }
+    }
+  };
+  const getAmountInWords = (amount) => {
+    writtenNumber.defaults.lang = "fr";
+    return writtenNumber(Math.floor(amount)) + " euros";
+  };
+  const cleanupPayPal = () => {
+    try {
+      if (paypalContainerRef.current) {
+        paypalContainerRef.current.innerHTML = "";
+      }
+      paypalButtons.current = null;
+    } catch (e) {
+      console.error("PayPal buttons cleanup error:", e);
+    }
+  };
+
+  const handlePaymentSuccess = async (details) => {
+    const payer = details.payer;
+    const purchase = details.purchase_units[0];
+    const transactionId = details.id;
+    const amount = parseFloat(purchase.amount.value);
+
+    setPaymentStatus("success");
+    setPaymentDetails({
+      name: `${payer.name?.given_name || ""} ${
+        payer.name?.surname || ""
+      }`.trim(),
+      email: payer.email_address,
+      transactionId,
+      amount,
+      currency: purchase.amount.currency_code,
+    });
+    setCountdown(20);
+
+    // Prepare receipt payload
+    const receiptPayload = {
+      name: donationData?.receiptData?.name || payer.name?.given_name || "",
+      surname: donationData?.receiptData?.surname || payer.name?.surname || "",
+      email: payer.email_address,
+      amount: amount,
+      ...(donationData?.requestReceipt && {
+        address: donationData?.receiptData?.address || "",
+        postalCode: donationData?.receiptData?.postalCode || "",
+        city: donationData?.receiptData?.city || "",
+        amountText:
+          donationData?.receiptData?.amountText || getAmountInWords(amount),
+      }),
+    };
+
+    try {
       const response = await fetch(
         `${backendUrl}/generate-receipt-or-thankyou`,
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            receiptData: donationData.receiptData,
-            donationCart: donationData.donationCart,
-            total: donationData.total,
-            totalInWords,
-            transactionId,
-            paymentDate: new Date().toISOString(),
-          }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(receiptPayload),
         }
       );
 
-      const data = await response.json();
-      if (data.pdfBase64) {
-        const link = document.createElement("a");
-        link.href = `data:application/pdf;base64,${data.pdfBase64}`;
-        link.download = "donation-receipt.pdf";
-        link.click();
-        console.debug("PDF receipt downloaded.");
-      } else {
-        console.warn("PDF receipt not generated.");
+      if (!response.ok) {
+        throw new Error("Failed to generate receipt");
       }
+
+      console.log("Receipt processing successful");
     } catch (err) {
-      console.error("Error generating PDF receipt:", err);
+      console.error("Receipt error:", err);
+      // Optional: Show user-friendly error message
     }
   };
 
-  // Countdown
+  useEffect(() => {
+    if (!sdkReady || !window.paypal || !isMounted.current) return;
+
+    const container = paypalContainerRef.current;
+    if (!container || !container.isConnected) return;
+
+    cleanupPayPal();
+
+    try {
+      paypalButtons.current = window.paypal.Buttons({
+        style: {
+          layout: "vertical",
+          color: "gold",
+          shape: "rect",
+          label: "checkout",
+        },
+        createOrder: (data, actions) => {
+          const items = donationData.donationCart.map((item) => ({
+            name: item.causeLabel,
+            unit_amount: {
+              currency_code: "EUR",
+              value: item.amount.toFixed(2),
+            },
+            quantity: "1",
+          }));
+
+          const itemTotal = donationData.donationCart
+            .reduce((sum, item) => sum + item.amount, 0)
+            .toFixed(2);
+
+          const fee = donationData.coverFees
+            ? parseFloat(itemTotal) * 0.029 + 0.3
+            : 0;
+          const grandTotal = (parseFloat(itemTotal) + fee).toFixed(2);
+
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: {
+                  value: grandTotal,
+                  currency_code: "EUR",
+                  breakdown: {
+                    item_total: { value: itemTotal, currency_code: "EUR" },
+                    handling: { value: fee.toFixed(2), currency_code: "EUR" },
+                  },
+                },
+                items,
+              },
+            ],
+            application_context: {
+              shipping_preference: "NO_SHIPPING",
+              user_action: "PAY_NOW",
+            },
+          });
+        },
+        onApprove: async (data, actions) => {
+          try {
+            const details = await actions.order.capture();
+            await handlePaymentSuccess(details);
+          } catch (err) {
+            setPaymentStatus("error");
+            setErrorMessage("Payment failed: " + err.message);
+          }
+        },
+      });
+
+      if (paypalButtons.current?.isEligible()) {
+        paypalButtons.current.render(container);
+      } else {
+        setErrorMessage("PayPal is not available in your region");
+        setLoading(false);
+      }
+    } catch (err) {
+      setErrorMessage("Failed to initialize PayPal");
+      setLoading(false);
+    }
+  }, [sdkReady, donationData]);
+
+  // Countdown effect remains the same
   useEffect(() => {
     if (paymentStatus === "success") {
       const timer = setInterval(() => {
@@ -347,270 +508,8 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
     }
   }, [paymentStatus, onBackToDonation]);
 
-  const loadPayPalSDK = async () => {
-    try {
-      console.debug("Fetching PayPal config...");
-      const res = await fetch(`${backendUrl}/config/paypal`);
-      const { clientId } = await res.json();
-      console.debug("PayPal client ID received:", clientId);
-
-      // Remove existing PayPal SDK
-      document
-        .querySelectorAll('script[src*="paypal.com/sdk/js"]')
-        .forEach((el) => el.remove());
-
-      const script = document.createElement("script");
-      script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=EUR&enable-funding=card&disable-funding=paylater&components=buttons`;
-      script.async = true;
-
-      script.onload = () => {
-        console.debug("PayPal SDK script loaded.");
-        if (isMounted.current) {
-          setSdkReady(true);
-          setErrorMessage(null);
-          setLoading(false);
-        }
-      };
-
-      script.onerror = () => {
-        console.error("PayPal SDK failed to load.");
-        if (isMounted.current) {
-          setErrorMessage("Failed to load PayPal SDK. Please try again.");
-          setLoading(false);
-        }
-      };
-
-      document.body.appendChild(script);
-    } catch (err) {
-      console.error("Error fetching PayPal client ID:", err);
-      if (isMounted.current) {
-        setErrorMessage("Failed to fetch PayPal configuration");
-        setLoading(false);
-      }
-    }
-  };
-
-  useEffect(() => {
-    isMounted.current = true;
-    setLoading(true);
-    console.debug("Initiating PayPal SDK load...");
-    loadPayPalSDK();
-
-    return () => {
-      isMounted.current = false;
-
-      try {
-        if (paypalContainerRef.current) {
-          paypalContainerRef.current.innerHTML = "";
-        }
-        paypalButtons.current = null;
-      } catch (e) {
-        console.debug("PayPal buttons cleanup error:", e);
-      }
-    };
-  }, [retryCount]);
-
-  useEffect(() => {
-    if (!sdkReady || !window.paypal || !isMounted.current) {
-      console.debug("PayPal SDK not ready or component unmounted.");
-      return;
-    }
-
-    const container = paypalContainerRef.current;
-    if (!container || !container.isConnected) {
-      console.debug("PayPal container not connected or missing.");
-      return;
-    }
-
-    // Cleanup previous
-    if (paypalButtons.current) {
-      try {
-        paypalButtons.current.close();
-      } catch (e) {
-        console.debug("Error closing previous PayPal buttons:", e);
-      }
-      container.innerHTML = "";
-    }
-
-    console.debug("Creating PayPal Buttons instance...");
-    try {
-      paypalButtons.current = window.paypal.Buttons({
-        style: {
-          layout: "vertical",
-          color: "gold",
-          shape: "rect",
-          label: "checkout",
-        },
-        createOrder: (data, actions) => {
-          console.debug("Creating order with donation data:", donationData);
-
-          const items = donationData.donationCart.map((item) => ({
-            name: item.causeLabel,
-            unit_amount: {
-              currency_code: "EUR",
-              value: item.amount.toFixed(2),
-            },
-            quantity: "1",
-            description: `Donation to ${item.causeLabel}`,
-          }));
-
-          const itemTotal = donationData.donationCart
-            .reduce((sum, item) => sum + item.amount, 0)
-            .toFixed(2);
-
-          const totalAmount = parseFloat(itemTotal);
-          const fee = donationData.coverFees ? totalAmount * 0.029 + 0.3 : 0;
-          const grandTotal = (totalAmount + fee).toFixed(2);
-
-          console.debug("Order total:", grandTotal);
-
-          return actions.order.create({
-            purchase_units: [
-              {
-                amount: {
-                  value: grandTotal,
-                  currency_code: "EUR",
-                  breakdown: {
-                    item_total: {
-                      value: itemTotal,
-                      currency_code: "EUR",
-                    },
-                    handling: {
-                      value: fee.toFixed(2),
-                      currency_code: "EUR",
-                    },
-                  },
-                },
-                description: `Donation to ${cause}`,
-                items: items,
-                custom_id: "DONATION_" + Date.now(),
-                invoice_id: "INV-" + Math.random().toString(36).substring(2, 9),
-              },
-            ],
-            application_context: {
-              shipping_preference: "NO_SHIPPING",
-              user_action: "PAY_NOW",
-              brand_name: "SOS ",
-            },
-          });
-        },
-        onApprove: async (data, actions) => {
-          console.debug("Payment approved, capturing order...");
-
-          try {
-            const details = await actions.order.capture();
-            console.debug("Payment details:", details);
-
-            const name = details.payer.name?.given_name || "Donor";
-            const amountPaid = details.purchase_units[0].amount.value;
-            const transactionId = details.id;
-            const donorEmail = details.payer.email_address;
-            // const donorEmail = "omarbarakeh20002@gmail.com";
-
-            setPaymentStatus("success");
-            setPaymentDetails({
-              name,
-              amount: amountPaid,
-              email: donorEmail,
-              transactionId,
-            });
-            setCountdown(20);
-
-            // Handle backend receipt/thank-you email
-            if (donationData?.requestReceipt || donationData?.requestThankYou) {
-              console.debug("Calling /generate-receipt-or-thankyou...");
-              try {
-                const receiptPayload = {
-                  name: donationData?.receiptData?.name || name,
-                  surname: donationData?.receiptData?.surname || "",
-                  address: donationData?.receiptData?.address || "",
-                  postalCode: donationData?.receiptData?.postalCode || "",
-                  city: donationData?.receiptData?.city || "",
-                  amount: amountPaid,
-                  amountText: donationData?.receiptData?.amountText || "",
-                  email: donorEmail,
-                };
-
-                const receiptRes = await fetch(
-                  `${backendUrl}/generate-receipt-or-thankyou`,
-                  {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(receiptPayload),
-                  }
-                );
-
-                const receiptJson = await receiptRes.json();
-
-                if (receiptRes.ok) {
-                  console.debug("Backend response:", receiptJson.message);
-                  alert("📧 Email envoyé avec succès !");
-                } else {
-                  console.error("Receipt endpoint error:", receiptJson.error);
-                }
-              } catch (receiptErr) {
-                console.error(
-                  "Error calling /generate-receipt-or-thankyou:",
-                  receiptErr
-                );
-              }
-            }
-          } catch (err) {
-            console.error("Order capture failed:", err);
-            setPaymentStatus("error");
-            setErrorMessage("Payment failed: " + err.message);
-          }
-        },
-      });
-
-      if (paypalButtons.current && paypalButtons.current.isEligible()) {
-        console.debug("Rendering PayPal buttons...");
-        paypalButtons.current.render(container).catch((err) => {
-          if (
-            !err.message.includes("container element removed") &&
-            !err.message.includes("zoid destroyed")
-          ) {
-            console.error("PayPal render error:", err);
-            console.debug("PayPal container state:", container);
-            setErrorMessage("Failed to initialize payment buttons");
-          }
-        });
-      } else {
-        console.debug("PayPal buttons not eligible for this environment.");
-        setErrorMessage("PayPal is not available in your region or browser");
-        setLoading(false);
-      }
-    } catch (err) {
-      console.error("Unexpected error initializing PayPal:", err);
-      setErrorMessage("Failed to initialize PayPal");
-      setLoading(false);
-    }
-
-    return () => {
-      if (paypalButtons.current) {
-        try {
-          paypalButtons.current.close();
-        } catch (e) {
-          console.debug("PayPal buttons cleanup error:", e);
-        }
-      }
-    };
-  }, [sdkReady, amount, cause, donationData]);
-
-  const calculateNetAmount = (gross) => {
-    const amt = parseFloat(gross);
-    if (isNaN(amt)) return "0.00";
-    const fee = amt * 0.029 + 0.3;
-    return (amt - fee).toFixed(2);
-  };
-
   const handleRetry = () => {
-    console.debug("Retrying PayPal initialization...");
-    if (paypalContainerRef.current) {
-      paypalContainerRef.current.innerHTML = "";
-    }
+    cleanupPayPal();
     setSdkReady(false);
     setErrorMessage(null);
     setPaymentStatus(null);
@@ -650,15 +549,8 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
         </ul>
         <div className="total-row">
           <span>{t("paypal.total")}:</span>
-          <span>€{amount}</span>
+          <span>€{donationData?.total?.toFixed(2) || "0.00"}</span>
         </div>
-        {donationData?.coverFees && (
-          <p className="fee-note">
-            {t("paypal.includedFees", {
-              fee: (parseFloat(amount) * 0.029 + 0.3).toFixed(2),
-            })}
-          </p>
-        )}
       </div>
 
       {loading && (
@@ -681,13 +573,13 @@ const PayPalPaymentPage = ({ donationData, onBackToDonation }) => {
             {t("paypal.amountPaid")}: €{paymentDetails.amount}
           </p>
           <p>
-            {t("paypal.netReceived")}: €
-            {calculateNetAmount(paymentDetails.amount)}
-          </p>
-          <p>
             {t("paypal.transactionId")}: {paymentDetails.transactionId}
           </p>
-          <p>{t("paypal.receiptSent")}</p>
+          <p>
+            {donationData.requestReceipt
+              ? t("paypal.receiptSent")
+              : t("paypal.thankYouSent")}
+          </p>
           <p className="countdown-message">
             {t("paypal.redirecting", { seconds: countdown })}
           </p>

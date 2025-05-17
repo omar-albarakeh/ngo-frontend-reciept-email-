@@ -19,7 +19,7 @@ const Home = () => {
         heading={t("donate.heading")}
         text={t("donate.text")}
         buttonTitle={t("donate.button")}
-        buttonLink="/donation"
+        buttonLink="/faire-un-don"
       />
       <AboutAssociation />
       <CharityQuote />

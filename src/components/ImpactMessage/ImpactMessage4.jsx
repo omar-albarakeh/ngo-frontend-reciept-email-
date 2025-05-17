@@ -12,7 +12,7 @@ const ImpactMessage = () => {
           <h2 className="impact-card-heading">{t("heading")}</h2>
           <p className="impact-card-text">{t("paragraph1")}</p>
           <div className="impact-card-button-wrapper">
-            <a href="/donation" className="impact-card-btn">
+            <a href="/faire-un-don" className="impact-card-btn">
               {t("donateButton")}
             </a>
           </div>

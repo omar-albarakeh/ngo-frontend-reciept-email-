@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="footer-column logos">
           <div className="logo-grid">
             {[1, 2].map((n) => (
-              <a key={n} href="/Home">
+              <a key={n} href="/accueil">
                 <img src={`/images/logo/logo${n}.webp`} alt={`Logo ${n}`} />
               </a>
             ))}

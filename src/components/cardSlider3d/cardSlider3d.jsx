@@ -107,7 +107,7 @@ const CardSlider = () => {
           <div
             key={image.id}
             onClick={() =>
-              navigate(`/gallery?folder=${encodeURIComponent(image.folder)}`)
+              navigate(`/galerie?folder=${encodeURIComponent(image.folder)}`)
             }
             className={`slide ${index === currentIndex ? "active" : ""}`}
             style={getCircularStyle(index)}>

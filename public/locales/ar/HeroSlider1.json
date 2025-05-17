@@ -4,7 +4,7 @@
       "name": "غزة SOS",
       "description": "كن شريان الحياة لعائلات غزة من خلال توفير الغذاء والمأوى والرعاية الطبية",
       "buttonText": "تبرع الآن",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "الزكاة",
@@ -16,25 +16,25 @@
       "name": "رمضان 2025",
       "description": "املأ موائدهم بالبركة من خلال كرمك في هذا رمضان",
       "buttonText": "تبرع الآن",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "عيد الأضحى",
       "description": "شارك أضحيتك وأدخل البهجة إلى قلوب المحتاجين",
       "buttonText": "تبرع الآن",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "كفالة الأيتام",
       "description": "كن الأمل والدعم ليتيم في انتظارك",
       "buttonText": "تبرع الآن",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "مياه لغزة",
       "description": "وفر حلولاً نظيفة ومنقذة للحياة لمياه غزة",
       "buttonText": "تبرع الآن",
-      "link": "/donation"
+      "link": "/faire-un-don"
     }
   ]
 }

@@ -524,3 +524,144 @@
     grid-column: span 1;
   }
 }
+
+.donation-form {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+  width: calc(100% - 2rem);
+}
+
+/* Original column order maintained */
+.donation-grid {
+  display: grid;
+  grid-template-columns: 1fr 620px; /* Left: flexible, Right: fixed */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .donation-grid {
+    grid-template-columns: 1fr minmax(300px, 420px); /* Right column shrinks */
+  }
+}
+
+@media (max-width: 900px) {
+  .donation-grid {
+    grid-template-columns: 1fr; /* Stacks vertically */
+    gap: 1.5rem;
+  }
+
+  /* Remove the order change that moved summary to top */
+  /* .donation-summary {
+    order: -1; REMOVED THIS LINE TO KEEP ORIGINAL ORDER
+  } */
+}
+
+/* Rest of your original styles remain unchanged */
+.cause-grid-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 150px) 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .cause-grid-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .custom-amount-inline input {
+    max-width: 100%;
+  }
+}
+
+.receipt-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.receipt-form h4 {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 480px) {
+  .receipt-form {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-form {
+    padding: 1rem;
+  }
+
+  .payment-btn {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+.custom-amount-inline input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .custom-amount-inline input {
+    max-width: 100%;
+  }
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.summary-item span:first-child {
+  flex: 1;
+  min-width: 60%;
+}
+
+.summary-item span:nth-child(2) {
+  min-width: 80px;
+  text-align: right;
+}
+
+.tax-tip-boxB {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .tax-tip-boxB {
+    padding: 0.75rem;
+  }
+
+  .tax-tip-boxB h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .tax-tip-boxB p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+  }
+}

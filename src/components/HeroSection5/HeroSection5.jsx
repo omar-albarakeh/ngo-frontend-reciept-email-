@@ -14,7 +14,7 @@ const HeroSection = () => {
           <p className="hero-descriptionsos">{t("description.part1")}</p>
           <button
             className="hero-buttonsos"
-            onClick={() => navigate("/donation")}>
+            onClick={() => navigate("/faire-un-don")}>
             {t("button.text")}
           </button>
         </div>

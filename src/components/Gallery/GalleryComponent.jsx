@@ -57,7 +57,7 @@ const Gallery = () => {
   }, [selectedImages]);
 
   const handleCardClick = (images, folder) => {
-    navigate(`/gallery?folder=${encodeURIComponent(folder)}`);
+    navigate(`/galerie?folder=${encodeURIComponent(folder)}`);
     setSelectedImages(images);
     setCurrentIndex(0);
   };

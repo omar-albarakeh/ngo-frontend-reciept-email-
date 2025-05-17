@@ -28,14 +28,14 @@ const Home = () => {
       <HeroSlider />
       {/* <TaxTip /> */}
       <QurbaniDonateBox />
-      {adsData.map((ad, index) => (
+      {/* {adsData.map((ad, index) => (
         <AdPopup
           key={index}
           {...ad}
           message={t(ad.message)}
           topOffset={200 + index * 100}
         />
-      ))}
+      ))} */}
       <AidAdhaSection />
       <ZakatCard />
       <Youtube />

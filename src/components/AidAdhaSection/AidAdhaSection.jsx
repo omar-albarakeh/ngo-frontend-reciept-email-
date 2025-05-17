@@ -10,7 +10,7 @@ const AidAdhaSection = () => {
   return (
     <div className="aid-section">
       <div className="aid-triangle">
-        <img src="/images/AidAlAdha/adha37.webp" alt="Qurbani distribution" />
+        <img src="/images/AidAlAdha/adha29.webp" alt="Qurbani distribution" />
       </div>
       <div className="aid-content">
         <h2>{t("aidAdha.heading")}</h2>
@@ -21,7 +21,9 @@ const AidAdhaSection = () => {
         <p>{t("aidAdha.paragraph2")}</p>
 
         <div className="aid-buttons">
-          <button className="AidButton" onClick={() => navigate("/donation")}>
+          <button
+            className="AidButton"
+            onClick={() => navigate("/faire-un-don")}>
             {t("aidAdha.button")}
           </button>
           <button

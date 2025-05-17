@@ -25,7 +25,7 @@ const LogoSwitcher = ({ interval = 3000, className = "" }) => {
   }, [logos.length, interval]);
 
   return (
-    <Link to="/Home" className={`logo-switcher ${className}`}>
+    <Link to="/accueil" className={`logo-switcher ${className}`}>
       {logos.map((logo, index) => (
         <img
           key={index}

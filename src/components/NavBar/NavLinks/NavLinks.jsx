@@ -24,32 +24,33 @@ const NavLinks = ({
       { path: "/ramadan-2025", label: t("nav.services.ramadan2025") },
       { path: "/aid-al-adha", label: t("nav.services.aidAlAdha") },
       {
-        path: "/orphan-sponsorship",
+        path: "/parrainage-orphelins",
         label: t("nav.services.orphanSponsorship"),
       },
-      { path: "/water-for-gaza", label: t("nav.services.waterForGaza") },
+      { path: "/eau-pour-gaza", label: t("nav.services.waterForGaza") },
     ],
     whoWeAre: [
-      { path: "/Whoweare", label: t("nav.whoWeAre.whoAreWe") },
-      { path: "/history", label: t("nav.whoWeAre.history") },
+      { path: "/qui-sommes-nous", label: t("nav.whoWeAre.whoAreWe") },
+      { path: "/Histoire", label: t("nav.whoWeAre.history") },
     ],
   };
 
   return (
     <nav className={`nav-links ${menuOpen ? "mobile-open" : ""}`}>
       <Link
-        to="/Home"
+        to="/Accueil"
         onClick={closeMenu}
-        className={currentPath === "/" ? "active" : ""}>
+        className={currentPath === "/Accueil" ? "active" : ""}>
         {t("nav.Welcome")}
       </Link>
 
       <Link
-        to="/gallery"
+        to="/galerie"
         onClick={closeMenu}
-        className={currentPath === "/gallery" ? "active" : ""}>
+        className={currentPath === "/galerie" ? "active" : ""}>
         {t("nav.gallery")}
       </Link>
+
       <DropdownMenu
         label={t("nav.ourServices")}
         name="services"
@@ -81,7 +82,7 @@ const NavLinks = ({
         {t("nav.contactUs")}
       </Link>
 
-      <CustomButton titleKey={t("nav.donateNow")} to="/donation" />
+      <CustomButton titleKey={t("nav.donateNow")} to="/faire-un-don" />
     </nav>
   );
 };

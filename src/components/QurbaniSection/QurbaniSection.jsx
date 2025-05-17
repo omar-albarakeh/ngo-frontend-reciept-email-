@@ -73,7 +73,7 @@ const QurbaniDonateBox = () => {
     setSelectedTier(amount);
     localStorage.setItem("donationAmount", amount.toString());
     localStorage.setItem("donationCause", "aidAlAdha");
-    navigate("/donation");
+    navigate("/faire-un-don");
   };
 
   return (

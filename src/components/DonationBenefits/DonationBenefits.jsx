@@ -7,15 +7,21 @@ import {
   faUniversity,
 } from "@fortawesome/free-solid-svg-icons";
 import "./DonationBenefits.css";
-import CustomButton from "../customButton/customButton";
 
 const DonationBenefits = () => {
-  const { t } = useTranslation(["donationBenefits", "bankInfo"]);
+  const { t, i18n } = useTranslation(["donationBenefits", "bankInfo"]);
   const [copied, setCopied] = useState("");
+  const isRTL = i18n.dir() === "rtl";
 
-  const ibanFrance = "FR76 3000 3024 3300 0506 1175 910";
-  const bicFrance = "SOGEFRPP";
-  const ibanSwitzerland = "CH20 0070 0114 9025 3157 1";
+  const bankAccounts = {
+    france: {
+      IBAN: "FR76 3000 3024 3300 0506 1175 910",
+      BIC: "SOGEFRPP",
+    },
+    switzerland: {
+      IBAN: "CH20 0070 0114 9025 3157 1",
+    },
+  };
 
   const handleCopy = async (text, label) => {
     try {
@@ -28,16 +34,17 @@ const DonationBenefits = () => {
   };
 
   const InfoItem = ({ label, value }) => (
-    <div className="info-inline-item">
+    <div className={`info-inline-item ${isRTL ? "rtl" : ""}`}>
       <div className="info-label-group">
         <FontAwesomeIcon icon={faUniversity} className="info-icon" />
-        <strong>{label}:</strong>
+        <strong>{t(`bankInfo:${label}`)}:</strong>
       </div>
       <span className="info-value">{value}</span>
       <button
         onClick={() => handleCopy(value, label)}
         className={`copy-button ${copied === label ? "copied" : ""}`}
-        title={t(`bankInfo.copy${label}`)}>
+        title={t("bankInfo:copy")}
+        aria-label={t("bankInfo:copy")}>
         {copied === label ? (
           <FontAwesomeIcon icon={faCheckCircle} className="copied-icon" />
         ) : (
@@ -50,16 +57,16 @@ const DonationBenefits = () => {
   return (
     <section className="donation-benefits">
       <div className="bank-info-box">
-        <h3 className="bank-info-title">{t("title")}</h3>
+        <p className="bank-info-title">{t("donationBenefits:title")}</p>
         <div className="bank-info-row">
           <div className="bank-info-column">
-            <h4>{t("france")}</h4>
-            <InfoItem label="IBAN_FR" value={ibanFrance} />
-            <InfoItem label="BIC_FR" value={bicFrance} />
+            <h4>{t("donationBenefits:france")}</h4>
+            <InfoItem label="IBAN_FR" value={bankAccounts.france.IBAN} />
+            <InfoItem label="BIC_FR" value={bankAccounts.france.BIC} />
           </div>
           <div className="bank-info-column">
-            <h4>{t("switzerland")}</h4>
-            <InfoItem label="IBAN_CH" value={ibanSwitzerland} />
+            <h4>{t("donationBenefits:switzerland")}</h4>
+            <InfoItem label="IBAN_CH" value={bankAccounts.switzerland.IBAN} />
           </div>
         </div>
       </div>

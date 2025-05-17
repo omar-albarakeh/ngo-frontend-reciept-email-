@@ -4,7 +4,7 @@
       "name": "SOS Gaza",
       "description": "Soyez le soutien vital des familles de Gaza en fournissant nourriture, abri et soins médicaux",
       "buttonText": "Faire un don",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "Zakat",
@@ -16,25 +16,25 @@
       "name": "Ramadan 2025",
       "description": "Remplissez leurs tables de bénédictions grâce à votre générosité ce Ramadan",
       "buttonText": "Faire un don",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "Aïd al-Adha",
       "description": "Partagez votre sacrifice et apportez de la joie aux cœurs des nécessiteux",
       "buttonText": "Faire un don",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "Parrainage d’orphelins",
       "description": "Soyez l'espoir et le soutien d’un orphelin en attente",
       "buttonText": "Faire un don",
-      "link": "/donation"
+      "link": "/faire-un-don"
     },
     {
       "name": "Eau pour Gaza",
       "description": "Fournissez des solutions d'eau potable et vitales aux familles de Gaza",
       "buttonText": "Faire un don",
-      "link": "/donation"
+      "link": "/faire-un-don"
     }
   ]
 }

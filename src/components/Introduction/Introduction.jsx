@@ -1,6 +1,7 @@
 import "./Introduction.css";
 import { FaDonate } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import CustomButton from "../customButton/customButton";
 
 const WhoWeAre = () => {
   const { t } = useTranslation("whoweare");
@@ -31,11 +32,11 @@ const WhoWeAre = () => {
             <h3>{t("whoWeAre.joinMovement")}</h3>
             <p>{t("whoWeAre.joinMovementText")}</p>
 
-            <button
-              className="donate-button"
-              aria-label={t("whoWeAre.donateButton")}>
-              {t("whoWeAre.donateButton")}
-            </button>
+            <CustomButton
+              title={t("whoWeAre.donateButton")}
+              to="/faire-un-don"
+              aria-label={t("whoWeAre.donateButton")}
+            />
           </div>
 
           <div className="image-section">

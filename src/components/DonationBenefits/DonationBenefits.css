@@ -4,14 +4,13 @@
   background-color: var(--background-light);
   border-radius: 12px;
   margin: 2rem auto;
-  max-width: 77rem;
+  max-width: min(77rem, 95%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   font-family: var(--font-text);
-  width: 95%;
 }
 
 .bank-info-box {
@@ -24,11 +23,12 @@
 }
 
 .bank-info-title {
-  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   color: var(--text-dark);
   margin-bottom: 2rem;
   text-align: center;
   font-family: var(--font-subtitle);
+  font-weight: 600;
 }
 
 .bank-info-row {
@@ -44,16 +44,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  min-width: 250px;
+  min-width: min(100%, 300px);
 }
 
 .bank-info-column h4 {
   font-size: clamp(1.1rem, 1.5vw, 1.5rem);
   color: var(--primary-color);
-  text-align: left;
+  text-align: start;
   margin-bottom: 1rem;
-  border-left: 4px solid var(--primary-color);
-  padding-left: 0.75rem;
+  border-inline-start: 4px solid var(--primary-color);
+  padding-inline-start: 0.75rem;
+  font-weight: 600;
 }
 
 .info-inline-item {
@@ -69,6 +70,10 @@
   gap: 0.5rem;
 }
 
+.info-inline-item.rtl {
+  direction: rtl;
+}
+
 .info-label-group {
   display: flex;
   align-items: center;
@@ -80,6 +85,7 @@
 .info-icon {
   color: var(--primary-color);
   font-size: 1.1rem;
+  min-width: 16px;
 }
 
 .info-value {
@@ -87,10 +93,11 @@
   word-break: break-word;
   overflow-wrap: break-word;
   flex-grow: 1;
-  margin-left: 0.5rem;
+  margin-inline-start: 0.5rem;
   font-weight: 500;
   color: var(--text-dark);
   min-width: 0;
+  text-align: start;
 }
 
 .copy-button {
@@ -103,10 +110,12 @@
   font-size: var(--font-sm);
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: background 0.3s ease, transform 0.2s ease;
   position: relative;
   min-width: 2.5rem;
   min-height: 2.5rem;
+  flex-shrink: 0;
 }
 
 .copy-button:hover {
@@ -120,24 +129,23 @@
 }
 
 .copy-button.copied::after {
-  content: "Copied!";
+  content: attr(data-copied-text);
   position: absolute;
   top: -1.8rem;
-  right: 0;
+  inset-inline-end: 0;
   background: #4caf50;
   color: white;
   padding: 2px 6px;
   font-size: 0.75rem;
   border-radius: 4px;
   white-space: nowrap;
-  max-width: 100px;
 }
 
 .copied-icon {
   color: #ffffff;
 }
 
-/* Responsive layout tweaks */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .bank-info-row {
     flex-direction: column;
@@ -150,21 +158,40 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .info-inline-item {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
   }
 
   .info-value {
-    white-space: normal;
-    word-break: break-word;
-    margin-left: 0;
+    margin-inline-start: 0;
+    width: 100%;
+    padding-inline-end: 2.5rem;
+  }
+
+  .copy-button {
+    position: absolute;
+    inset-inline-end: 1rem;
+    bottom: 1rem;
   }
 
   .copy-button.copied::after {
     top: -1.2rem;
-    right: auto;
-    left: 0;
+    inset-inline-end: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .info-label-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .bank-info-title {
+    margin-bottom: 1.5rem;
   }
 }

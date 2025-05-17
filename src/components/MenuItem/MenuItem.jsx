@@ -38,7 +38,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.aidAlAdha.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
     {
       image: "/images/MenuItem/slide2.webp",
@@ -47,7 +47,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.sosGaza.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
     {
       image: "/images/MenuItem/slide3.webp",
@@ -56,7 +56,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.zakatAlMaal.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
     {
       image: "/images/MenuItem/slide4.webp",
@@ -65,7 +65,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.ramadan2025.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
     {
       image: "/images/MenuItem/slide5.webp",
@@ -74,7 +74,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.orphanSponsorship.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
     {
       image: "/images/MenuItem/slide6.webp",
@@ -83,7 +83,7 @@ const Menu = () => {
       learnMoreText: t("menu.learnMore"),
       learnMoreLink: t("menu.waterForGaza.learnMoreLink"),
       donateText: t("menu.donateNow"),
-      donateLink: "/donation",
+      donateLink: "/faire-un-don",
     },
   ];
 

@@ -55,7 +55,7 @@ const ZakatCalculator = () => {
   const handleDonate = () => {
     localStorage.setItem("donationAmount", zakatDue.toFixed(2));
     localStorage.setItem("donationCause", "zakatAlMaal");
-    navigate("/donation");
+    navigate("/faire-un-don");
   };
 
   const goldValue = (parseFloat(values.gold.grams) || 0) * values.gold.price;

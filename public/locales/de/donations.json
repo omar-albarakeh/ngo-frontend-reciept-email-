@@ -21,7 +21,7 @@
       "postalCode": "Postleitzahl",
       "city": "Stadt",
     "total": "Gesamt",
-    "emailLabel": "E-Mail (optional, für Quittung):",
+    "emailLabel": "E-Mail:",
     "coverFees": "Ich möchte die Bearbeitungsgebühren übernehmen, damit 100 % meiner Spende bei der Sache ankommen.",
     "proceed": "Zur Zahlung fortfahren",
     "feeNote": "Enthält Bearbeitungsgebühren",
