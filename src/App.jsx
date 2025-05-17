@@ -34,7 +34,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Navigate to="/aid-al-adha" />} />
+        <Route path="/" element={<Navigate to="/accueil" />} />
         {/* French Routes */}
         <Route path="/accueil" element={<Home />} />
         <Route path="/contact" element={<Contact />} />

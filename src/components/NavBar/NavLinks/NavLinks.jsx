@@ -19,15 +19,15 @@ const NavLinks = ({
 
   const dropdownItems = {
     services: [
+      { path: "/aid-al-adha", label: t("nav.services.aidAlAdha") },
       { path: "/sos-gaza", label: t("nav.services.sosGaza") },
       { path: "/zakat-al-maal", label: t("nav.services.zakatAlMaal") },
-      { path: "/ramadan-2025", label: t("nav.services.ramadan2025") },
-      { path: "/aid-al-adha", label: t("nav.services.aidAlAdha") },
       {
         path: "/parrainage-orphelins",
         label: t("nav.services.orphanSponsorship"),
       },
       { path: "/eau-pour-gaza", label: t("nav.services.waterForGaza") },
+      { path: "/ramadan-2025", label: t("nav.services.ramadan2025") },
     ],
     whoWeAre: [
       { path: "/qui-sommes-nous", label: t("nav.whoWeAre.whoAreWe") },
